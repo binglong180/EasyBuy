@@ -7,7 +7,6 @@
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ path + "/pre/";
 %>
-<%@include file="../common/pre/headerDown.jsp" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
@@ -21,30 +20,39 @@
 <!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-<link rel="icon" href="img/favicon.png" />
+
 <!-- Place favicon.ico in the root directory -->
 
-<!-- all css here -->
-<!-- bootstrap.min.css -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<!-- font-awesome.min.css -->
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<!-- owl.carousel.css -->
-<link rel="stylesheet" href="css/owl.carousel.css">
-<!-- owl.carousel.css -->
-<link rel="stylesheet" href="css/meanmenu.min.css">
-<!-- shortcode/shortcodes.css -->
-<link rel="stylesheet" href="css/shortcode/shortcodes.css">
-<!-- nivo-slider.css -->
-<link rel="stylesheet" href="css/nivo-slider.css">
-<!-- style.css -->
-<link rel="stylesheet" href="style.css">
-<!-- responsive.css -->
-<link rel="stylesheet" href="css/responsive.css">
-<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
 </head>
 
 <body>
+	<%@include file="../common/pre/header.jsp"%>
+	<%@include file="../common/pre/search.jsp"%>
+<!-- ***************************************************************************** -->
+	<!-- 获取当前在线用户 -->
+	<c:choose>
+		<c:when test="${!empty user}">
+			<c:set var="userName" value="${user.userName}" scope="session"></c:set>
+			<c:set var="loginUrl" value="account.jsp" scope="session"></c:set>
+		</c:when>
+		<c:otherwise>
+			<c:set var="userName" value="登录  / 注册" scope="session"></c:set>
+			<c:set var="loginUrl" value="login.jsp" scope="session"></c:set>
+		</c:otherwise>
+	</c:choose>
+<!-- ***************************************************************************** -->
+	<!-- 获取一级菜单列表 -->
+	<c:if test="${empty productCategoryList}">
+		<script>
+			location.href = "/EasyBuy/productCategory?action=index";
+		</script>
+	</c:if>
+<!-- ***************************************************************************** -->
+
+
+
+
 	<!-- slider-area-start -->
 	<div class="slider-area">
 		<div class="container">
@@ -150,13 +158,17 @@
 					<div class="tab-menu">
 						<ul>
 							<li class="active"><a href="#home" data-toggle="tab"><img
-									src="img/electronic/1.png" alt="" />Electronics </a></li>
+									src="img/electronic/1.png" alt="" />Electronics </a>
+							</li>
 							<li><a href="#profile" data-toggle="tab"><img
-									src="img/electronic/2.png" alt="" />Cameras & Photo</a></li>
+									src="img/electronic/2.png" alt="" />Cameras & Photo</a>
+							</li>
 							<li><a href="#messages" data-toggle="tab"><img
-									src="img/electronic/3.png" alt="" />Sports & Outdoors</a></li>
+									src="img/electronic/3.png" alt="" />Sports & Outdoors</a>
+							</li>
 							<li><a href="#settings" data-toggle="tab"><img
-									src="img/electronic/4.png" alt="" />Health & Beauty</a></li>
+									src="img/electronic/4.png" alt="" />Health & Beauty</a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -2194,30 +2206,9 @@
 		</div>
 	</div>
 	<!-- all-product-area-end -->
-	
 
 
-	
+	<%@include file="../common/pre/footer.jsp"%>
 </body>
-<!-- all js here -->
-	<!-- jquery-1.12.0 -->
-	<script src="js/vendor/jquery-1.12.4.js"></script>
-	<!-- bootstrap.min.js -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- nivo.slider.js -->
-	<script src="js/jquery.nivo.slider.pack.js"></script>
-	<!-- jquery-ui.min.js -->
-	<script src="js/jquery-ui.min.js"></script>
-	<!-- jquery.magnific-popup.min.js -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<!-- jquery.meanmenu.min.js -->
-	<script src="js/jquery.meanmenu.js"></script>
-	<!-- jquery.scrollup.min.js-->
-	<script src="js/jquery.scrollup.min.js"></script>
-	<!-- owl.carousel.min.js -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- plugins.js -->
-	<script src="js/plugins.js"></script>
-	<!-- main.js -->
-	<script src="js/main.js"></script>
+
 </html>

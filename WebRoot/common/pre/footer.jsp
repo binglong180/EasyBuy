@@ -17,12 +17,11 @@
 <link rel="icon" href="img/favicon.png" />
 <!-- Place favicon.ico in the root directory -->
 
-<!-- all css here -->
 <!-- bootstrap.min.css -->
 </head>
 
 <body>
-<!-- brand-area-start -->
+	<!-- brand-area-start -->
 	<div class="brand-area pb-60 dotted-style-2">
 		<div class="container">
 			<div class="row">
@@ -171,21 +170,24 @@
 									<div class="contact-text">
 										<span>PO Box 16122 Collins Street West Victoria 8007
 											Australia</span>
-									</div></li>
+									</div>
+								</li>
 								<li>
 									<div class="contact-icon">
 										<i class="fa fa-envelope-o"></i>
 									</div>
 									<div class="contact-text">
 										<a href="#"><span>demo@towerthemes.com</span> </a>
-									</div></li>
+									</div>
+								</li>
 								<li>
 									<div class="contact-icon">
 										<i class="fa fa-phone"></i>
 									</div>
 									<div class="contact-text">
 										<span>(+1)866-550-3669</span>
-									</div></li>
+									</div>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -197,18 +199,12 @@
 					<div class="footer-widget">
 						<div class="list-unstyled">
 							<ul>
-								<li><a href="#">About Us</a>
-								</li>
-								<li><a href="#">Delivery Information</a>
-								</li>
-								<li><a href="#">Privacy Policy</a>
-								</li>
-								<li><a href="#">Terms & Conditions</a>
-								</li>
-								<li><a href="#">Contact Us</a>
-								</li>
-								<li><a href="#">Site Map</a>
-								</li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Delivery Information</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Terms & Conditions</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Site Map</a></li>
 							</ul>
 						</div>
 					</div>
@@ -220,18 +216,12 @@
 					<div class="footer-widget">
 						<div class="list-unstyled">
 							<ul>
-								<li><a href="#">My Account</a>
-								</li>
-								<li><a href="#">Order History</a>
-								</li>
-								<li><a href="#">Wish List</a>
-								</li>
-								<li><a href="#">Newsletter</a>
-								</li>
-								<li><a href="#">Specials</a>
-								</li>
-								<li><a href="#">Brands</a>
-								</li>
+								<li><a href="#">My Account</a></li>
+								<li><a href="#">Order History</a></li>
+								<li><a href="#">Wish List</a></li>
+								<li><a href="#">Newsletter</a></li>
+								<li><a href="#">Specials</a></li>
+								<li><a href="#">Brands</a></li>
 							</ul>
 						</div>
 					</div>
@@ -293,23 +283,59 @@
 	<!-- social_block-start -->
 	<div id="social_block">
 		<ul>
-			<li class="facebook"><a href="#">Facebook</a>
-			</li>
-			<li class="twitter"><a href="#">twitter</a>
-			</li>
-			<li class="rss"><a href="#">rss</a>
-			</li>
-			<li class="youtube"><a href="#">youtube</a>
-			</li>
-			<li class="google-plus"><a href="#">google plus</a>
-			</li>
-			<li class="pinterest"><a href="#">pinterest</a>
-			</li>
+			<li class="facebook"><a href="#">Facebook</a></li>
+			<li class="twitter"><a href="#">twitter</a></li>
+			<li class="rss"><a href="#">rss</a></li>
+			<li class="youtube"><a href="#">youtube</a></li>
+			<li class="google-plus"><a href="#">google plus</a></li>
+			<li class="pinterest"><a href="#">pinterest</a></li>
 		</ul>
 	</div>
 	<!-- social_block-end -->
 </body>
 <!-- all js here -->
-
-
+<!-- jquery-1.12.0 -->
+<script src="js/vendor/jquery-1.12.4.js"></script>
+<!-- bootstrap.min.js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- nivo.slider.js -->
+<script src="js/jquery.nivo.slider.pack.js"></script>
+<!-- jquery-ui.min.js -->
+<script src="js/jquery-ui.min.js"></script>
+<!-- jquery.magnific-popup.min.js -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!-- jquery.meanmenu.min.js -->
+<script src="js/jquery.meanmenu.js"></script>
+<!-- jquery.scrollup.min.js-->
+<script src="js/jquery.scrollup.min.js"></script>
+<!-- owl.carousel.min.js -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- plugins.js -->
+<script src="js/plugins.js"></script>
+<!-- main.js -->
+<script src="js/main.js"></script>
+		<!-- Google Map js -->
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script>
+			function initialize() {
+			  var mapOptions = {
+				zoom: 15,
+				scrollwheel: false,
+				center: new google.maps.LatLng(23.81033, 90.41252)
+			  };
+			  var map = new google.maps.Map(document.getElementById('googleMap'),
+				  mapOptions);
+			  var marker = new google.maps.Marker({
+				position: map.getCenter(),
+				animation:google.maps.Animation.BOUNCE,
+				icon: 'img/map-icon.png',
+				map: map
+			  });
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>		
+<!--  表单验证的包-->
+<script src="js/jquery.validate.js"></script>
+<!--  register.js 编写验证-->
+<script type="text/javascript" src="js/myJs/register.js"></script>
 </html>

@@ -6,7 +6,7 @@
 			+ path + "/pre/";
 %>
 <!-- 头部导入 -->
-<%@include file="../common/pre/headerUp.jsp"%>
+<%@include file="../common/pre/header.jsp"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
@@ -22,29 +22,7 @@
 <!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-<link rel="icon" href="img/favicon.png" />
-<!-- Place favicon.ico in the root directory -->
 
-<!-- all css here -->
-<!-- bootstrap.min.css -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<!-- font-awesome.min.css -->
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<!-- owl.carousel.css -->
-<link rel="stylesheet" href="css/owl.carousel.css">
-<!-- owl.carousel.css -->
-<link rel="stylesheet" href="css/meanmenu.min.css">
-<!-- shortcode/shortcodes.css -->
-<link rel="stylesheet" href="css/shortcode/shortcodes.css">
-<!-- nivo-slider.css -->
-<link rel="stylesheet" href="css/nivo-slider.css">
-<!-- style.css -->
-<link rel="stylesheet" href="style.css">
-<!-- responsive.css -->
-<link rel="stylesheet" href="css/responsive.css">
-<!-- 验证样式 -->
-<link rel="stylesheet" href="css/myCss/register.css">
-<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
@@ -123,6 +101,5 @@
 <script src="js/main.js"></script>
 <!-- jquery.validate.js验证包 -->
 <script src="js/jquery.validate.js"></script>
-<!--  register.js 编写验证-->
-<script type="text/javascript" src="js/myJs/register.js"></script>
+
 </html>

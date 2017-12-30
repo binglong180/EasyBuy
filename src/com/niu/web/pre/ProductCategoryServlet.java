@@ -15,57 +15,32 @@ import javax.servlet.http.HttpServletResponse;
 import com.niu.bean.ProductCategory;
 import com.niu.service.productCategory.ProductCategoryService;
 import com.niu.service.productCategory.ProductCategoryServiceImpl;
+import com.niu.web.AbstractServlet;
 
 @WebServlet(value = "/productCategory", loadOnStartup = 2)
-public class ProductCategoryServlet extends HttpServlet {
+public class ProductCategoryServlet extends AbstractServlet {
+	private ProductCategoryService productCategoryService = null;
 
-	public void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		doPost(request, response);
-
+	public void init() throws ServletException {
+		productCategoryService = new ProductCategoryServiceImpl();
 	}
 
-	/**
-	 * The doPost method of the servlet. <br>
-	 * 
-	 * This method is called when a form has its tag value method equals to
-	 * post.
-	 * 
-	 * @param request
-	 *            the request send by the client to the server
-	 * @param response
-	 *            the response send by the server to the client
-	 * @throws ServletException
-	 *             if an error occurred
-	 * @throws IOException
-	 *             if an error occurred
-	 */
-	public void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		String path = request.getContextPath();
-		String basePath = request.getScheme() + "://" + request.getServerName()
-				+ ":" + request.getServerPort() + path + "/";
-		ProductCategoryService pcs = new ProductCategoryServiceImpl();
-		List<ProductCategory> list = null;
+	public String index(HttpServletRequest request, HttpServletResponse response) {
+		List<ProductCategory> productCategoryList = null;
 		try {
-			list = pcs.selectByParentId(0);
+			productCategoryList = productCategoryService.selectByParentId(0);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		ServletContext application = this.getServletContext();
-		application.setAttribute("productCategoryList", list);
-		response.sendRedirect("pre/index.jsp");
+		this.getServletContext().setAttribute("productCategoryList",
+				productCategoryList);
+		return "pre/index";
 	}
 
-	/**
-	 * Initialization of the servlet. <br>
-	 * 
-	 * @throws ServletException
-	 *             if an error occurs
-	 */
-	public void init() throws ServletException {
-
+	@Override
+	public Class getServletClass() {
+		return ProductCategoryServlet.class;
 	}
 
 }

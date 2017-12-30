@@ -6,7 +6,7 @@
 			+ path + "/";
 %>
 <!-- 头部导入 -->
-<%@include file="../common/pre/headerUp.jsp"%>
+<%@include file="../common/pre/header.jsp"%>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>

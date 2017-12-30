@@ -6,7 +6,7 @@
 			+ path + "/pre/";
 %>
 <!-- 头部导入 -->
-<%@include file="../common/pre/headerUp.jsp"%>
+<%@include file="../common/pre/header.jsp"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
@@ -25,24 +25,6 @@
 <link rel="icon" href="img/favicon.png" />
 <!-- Place favicon.ico in the root directory -->
 
-<!-- all css here -->
-<!-- bootstrap.min.css -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<!-- font-awesome.min.css -->
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<!-- owl.carousel.css -->
-<link rel="stylesheet" href="css/owl.carousel.css">
-<!-- owl.carousel.css -->
-<link rel="stylesheet" href="css/meanmenu.min.css">
-<!-- shortcode/shortcodes.css -->
-<link rel="stylesheet" href="css/shortcode/shortcodes.css">
-<!-- nivo-slider.css -->
-<link rel="stylesheet" href="css/nivo-slider.css">
-<!-- style.css -->
-<link rel="stylesheet" href="style.css">
-<!-- responsive.css -->
-<link rel="stylesheet" href="css/responsive.css">
-<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
@@ -163,25 +145,4 @@
 </body>
 <!-- 尾部导入 -->
 <%@include file="../common/pre/footer.jsp"%>
-<!-- all js here -->
-<!-- jquery-1.12.0 -->
-<script src="js/vendor/jquery-1.12.4.js"></script>
-<!-- bootstrap.min.js -->
-<script src="js/bootstrap.min.js"></script>
-<!-- nivo.slider.js -->
-<script src="js/jquery.nivo.slider.pack.js"></script>
-<!-- jquery-ui.min.js -->
-<script src="js/jquery-ui.min.js"></script>
-<!-- jquery.magnific-popup.min.js -->
-<script src="js/jquery.magnific-popup.min.js"></script>
-<!-- jquery.meanmenu.min.js -->
-<script src="js/jquery.meanmenu.js"></script>
-<!-- jquery.scrollup.min.js-->
-<script src="js/jquery.scrollup.min.js"></script>
-<!-- owl.carousel.min.js -->
-<script src="js/owl.carousel.min.js"></script>
-<!-- plugins.js -->
-<script src="js/plugins.js"></script>
-<!-- main.js -->
-<script src="js/main.js"></script>
 </html>
