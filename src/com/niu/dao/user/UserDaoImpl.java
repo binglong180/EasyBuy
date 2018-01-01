@@ -1,7 +1,9 @@
 package com.niu.dao.user;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.mysql.jdbc.Connection;
@@ -34,13 +36,11 @@ public class UserDaoImpl extends BaseDaoImpl<User> implements UserDao {
 	}
 
 	@Override
-	public User getUserByLoginPass(String loginName, String password)
-			throws SQLException {
+	public User getUserByLoginName(String loginName) throws SQLException {
 		StringBuffer sql = new StringBuffer(
 				"SELECT id,loginName,userName,PASSWORD,sex,identityCode,email,mobile,TYPE "
-						+ "FROM easybuy_user "
-						+ "WHERE 1=1 AND loginName=? AND PASSWORD=?");
-		ResultSet rs = this.executeQuery(sql, loginName, password);
+						+ "FROM easybuy_user " + "WHERE 1=1 AND loginName=?");
+		ResultSet rs = this.executeQuery(sql, loginName);
 		user = setTableByRs(rs);
 		return user;
 	}
@@ -55,6 +55,18 @@ public class UserDaoImpl extends BaseDaoImpl<User> implements UserDao {
 	public List<User> setListByRs(ResultSet rs) throws SQLException {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public int addUser(User user) throws SQLException {
+		StringBuffer sql = new StringBuffer(
+				"INSERT INTO easybuy_user(loginName,userName,`password`,sex,identityCode,email,mobile,`type`)"
+						+ "VALUE(?,?,?,?,?,?,?,?);");
+		ps = this.update(sql, user.getLoginName(), user.getUserName(),
+				user.getPassword(), user.getSex(), user.getIdentityCode(),
+				user.getEmail(), user.getMobile(), user.getType());
+		int id = ps.executeUpdate();
+		return id;
 	}
 
 }

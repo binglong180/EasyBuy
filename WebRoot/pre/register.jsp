@@ -1,16 +1,10 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%
-	String path = request.getContextPath();
-	String basePath = request.getScheme() + "://"
-			+ request.getServerName() + ":" + request.getServerPort()
-			+ path + "/pre/";
-%>
 <!-- 头部导入 -->
 <%@include file="../common/pre/header.jsp"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<base href="<%=basePath%>">
+
 
 <title>注册账号</title>
 
@@ -40,66 +34,63 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-lg-6 col-sm-6">
-					<form action="" id="MyForm">
-					<div class="form-fields pb-30">
-						<h2>手机号注册<a href="registerByEmail.jsp" style="float:right">邮箱注册</a></h2>
-						<p>
-							<label>登录名<span class="required">*</span> </label> <input
-								type="text" name="loginName">
-						</p>
-						<p>
-							<label>密 码<span class="required">*</span> </label> <input
-								type="password" name="password" id="password">
-						</p>
-						<p>
-							<label>确认密码 <span class="required">*</span> </label> <input
-								type="password" name="affirmPassword">
-						</p>
+					<form id="MyForm" name="MyForm">
+						<div class="form-fields pb-30">
+							<h2>
+								手机号注册<a href="${url }/pre/registerByEmail.jsp"
+									style="float:right">邮箱注册</a>
+							</h2>
+							<input type="hidden" name="way" value="mobile" id="way" /> <input
+								type="hidden" name="action" value="register" id="way" />
+							<p>
+								<label>登录名<span class="required">*</span> </label> <input
+									type="text" name="loginName" id="loginName"> <span
+									id="checkUser" style="color:red">1111</span>
+							</p>
+							<p>
+								<label>密 码<span class="required">*</span> </label> <input
+									type="password" name="password" id="password">
+							</p>
 
-						<p>
-							<label>手机<span class="required">*</span> </label> <input
-								type="text" name="mobile">
-						</p>
-					</div>
-					<div class="form-action floatright">
-						<input value="Register" type="submit">
-					</div>
-					
+							<p>
+								<label>确认密码 <span class="required">*</span> </label> <input
+									type="password" name="affirmPassword" id="affirmPassword">
+							</p>
+							<p>
+								<label>用户名<span class="required">*</span> </label> <input
+									type="text" name="userName" id="userName">
+							</p>
+							<p>
+								<label>性 别<span class="required">*</span> </label> <select
+									name="sex" id="sex">
+									<option value=1 selected="selected">男</option>
+									<option value=0>女</option>
+								</select>
+							</p>
+							<p>
+								<label>手 机<span class="required">*</span> </label> <input
+									type="text" name="mobile" id="mobile">
+							</p>
+						</div>
+						<div class="form-action floatright">
+							<input value="注册" type="submit" id="register">
+						</div>
+
 					</form>
-					
+
 				</div>
 
-				
-					
+
+
 			</div>
 		</div>
 	</div>
-	<!-- 注册用户 area end -->
+	<%@include file="../common/pre/footer.jsp"%>
 </body>
 <!-- 底部导入 -->
-<%@include file="../common/pre/footer.jsp"%>
-<!-- all js here -->
-<!-- jquery-1.12.4 -->
-<script src="js/vendor/jquery-1.12.4.js"></script>
-<!-- bootstrap.min.js -->
-<script src="js/bootstrap.min.js"></script>
-<!-- nivo.slider.js -->
-<script src="js/jquery.nivo.slider.pack.js"></script>
-<!-- jquery-ui.min.js -->
-<script src="js/jquery-ui.min.js"></script>
-<!-- jquery.magnific-popup.min.js -->
-<script src="js/jquery.magnific-popup.min.js"></script>
-<!-- jquery.meanmenu.min.js -->
-<script src="js/jquery.meanmenu.js"></script>
-<!-- jquery.scrollup.min.js-->
-<script src="js/jquery.scrollup.min.js"></script>
-<!-- owl.carousel.min.js -->
-<script src="js/owl.carousel.min.js"></script>
-<!-- plugins.js -->
-<script src="js/plugins.js"></script>
-<!-- main.js -->
-<script src="js/main.js"></script>
-<!-- jquery.validate.js验证包 -->
-<script src="js/jquery.validate.js"></script>
+<script type="text/javascript">
+	
+</script>
+
 
 </html>

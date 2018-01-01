@@ -93,12 +93,11 @@ public abstract class AbstractServlet extends HttpServlet {
 	}
 
 	private void toView(Object result, HttpServletRequest request,
-			HttpServletResponse response) {
-
+			HttpServletResponse response) throws ServletException {
 		try {
 			//如果是字符串则跳转到相关页面
 			if (result instanceof String) {
-				response.sendRedirect(result.toString() + ".jsp");
+				request.getRequestDispatcher(result.toString() + ".jsp").forward(request, response);
 			}else{
 				//进行数据传输
 				PrintUtil.print(result, response);

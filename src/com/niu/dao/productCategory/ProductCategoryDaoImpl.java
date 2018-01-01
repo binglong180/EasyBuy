@@ -11,13 +11,14 @@ import com.niu.dao.BaseDaoImpl;
 
 public class ProductCategoryDaoImpl extends BaseDaoImpl<ProductCategory>
 		implements ProductCategoryDao {
-	static List<ProductCategory> list=new ArrayList<ProductCategory>();
+	
 	public ProductCategoryDaoImpl(Connection conn) {
 		super(conn);
 	}
 	@Override
 	public List<ProductCategory> selectByParentId(Integer parentId)
 			throws SQLException {
+		List<ProductCategory> list=new ArrayList<ProductCategory>();
 		StringBuffer sql = new StringBuffer(
 				"SELECT id,`name`,parentId,`type`,iconClass FROM easybuy_product_category WHERE 1=1 AND parentId=?");
 		rs = this.executeQuery(sql, parentId);
@@ -33,6 +34,7 @@ public class ProductCategoryDaoImpl extends BaseDaoImpl<ProductCategory>
 	}
 	@Override
 	public List<ProductCategory> setListByRs(ResultSet rs) throws SQLException {
+		List<ProductCategory> list=new ArrayList<ProductCategory>();
 		if (rs != null) {
 			while (rs.next()) {
 				productCategory = new ProductCategory();

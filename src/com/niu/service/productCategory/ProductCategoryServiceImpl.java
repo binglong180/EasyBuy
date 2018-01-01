@@ -16,7 +16,8 @@ public class ProductCategoryServiceImpl extends BaseServiceImpl<ProductCategory>
 			throws SQLException {
 		conn=JDBCUtil.getConnection();
 		ProductCategoryDao pcd=new ProductCategoryDaoImpl(conn);
-		List<ProductCategory> productCategoryLists=pcd.selectByParentId(parentId);
+		List<ProductCategory> productCategoryLists=null;
+		productCategoryLists=pcd.selectByParentId(parentId);
 		return productCategoryLists;
 	}
 

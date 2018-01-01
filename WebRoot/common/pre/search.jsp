@@ -18,13 +18,21 @@
 </head>
 
 <body>
+<!-- ***************************************************************************** -->
+	<!-- 获取一级菜单列表 -->
+	<c:if test="${empty productCategoryList}">
+		<script>
+			location.href = "${url}/Home?action=index";
+		</script>
+	</c:if>
+<!-- ***************************************************************************** -->
 	<!-- header-bottom-area-start -->
 	<div class="header-bottom-area bg-color-1 ptb-25">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 					<div class="logo">
-						<a href="index.jsp"><img src="img/logo.png" alt="" /> </a>
+						<a href="index.jsp"><img src="${url}/statics/img/logo.png" alt="" /> </a>
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
@@ -103,7 +111,7 @@
 										<ol class="mini-products-list">
 											<!-- single item -->
 											<li><a class="product-image" href="product-details.html">
-													<img alt="" src="img/cart/1.jpg"> </a>
+													<img alt="" src="${url}/statics/img/cart/1.jpg"> </a>
 												<div class="product-details">
 													<p class="cartproduct-name">
 														<a href="product-details.html">Pellentesque habitant </a>
@@ -116,7 +124,7 @@
 											<!-- single item -->
 											<!-- single item -->
 											<li><a class="product-image" href="product-details.html">
-													<img alt="" src="img/cart/2.jpg"> </a>
+													<img alt="" src="${url}/statics/img/cart/2.jpg"> </a>
 												<div class="product-details">
 													<p class="cartproduct-name">
 														<a href="product-details.html">New catolog</a>
@@ -161,20 +169,20 @@
 						</div>
 						<div class="product_vmegamenu">
 							<ul>
-								<li><a href="#"><img src="img/menu-l/1.png" alt="" />
+								<li><a href="#"><img src="${url}/statics/img/menu-l/1.png" alt="" />
 										Automotive & Motorcycle</a>
 								</li>
-								<li><a href="#"><img src="img/menu-l/2.png" alt="" />Bags,
+								<li><a href="#"><img src="${url}/statics/img/menu-l/2.png" alt="" />Bags,
 										Shoes & Accessories</a>
 								</li>
-								<li><a href="#"><img src="img/menu-l/3.png" alt="" />
+								<li><a href="#"><img src="${url}/statics/img/menu-l/3.png" alt="" />
 										Cameras & Photo</a></li>
-								<li><a href="#"><img src="img/menu-l/4.png" alt="" />
+								<li><a href="#"><img src="${url}/statics/img/menu-l/4.png" alt="" />
 										Computers & Networking</a></li>
-								<li><a href="#"><img src="img/menu-l/5.png" alt="" />Flashlights
+								<li><a href="#"><img src="${url}/statics/img/menu-l/5.png" alt="" />Flashlights
 										& Lamps</a></li>
 								<li><a href="#" class="hover-icon"><img
-										src="img/menu-l/6.png" alt="" />Laptops & Accessories</a>
+										src="${url}/statics/img/menu-l/6.png" alt="" />Laptops & Accessories</a>
 									<div class="vmegamenu">
 										<span> <a href="#" class="vgema-title">Linux</a> <a
 											href="#">Edubuntu</a> <a href="#">Kubuntu</a> <a href="#">Lubuntu</a>
@@ -187,7 +195,7 @@
 												10</a> <a href="#">Windows 7</a> <a href="#">Windows 8.1</a> </span>
 									</div></li>
 								<li><a href="#" class="hover-icon"><img
-										src="img/menu-l/12.png" alt="" />Sports & Outdoors</a>
+										src="${url}/statics/img/menu-l/12.png" alt="" />Sports & Outdoors</a>
 									<div class="vmegamenu">
 										<span> <a href="#" class="vgema-title">Electronic</a> <a
 											href="#">Bedroom</a> <a href="#">Kitchen</a> <a href="#">Living
@@ -202,7 +210,7 @@
 											href="#">Top-Load </a> </span>
 									</div></li>
 								<li><a href="#" class="hover-icon"><img
-										src="img/menu-l/7.png" alt="" />Smartphone & Tablets</a>
+										src="${url}/statics/img/menu-l/7.png" alt="" />Smartphone & Tablets</a>
 									<div class="vmegamenu vmegamenu2">
 										<span> <a href="#" class="vgema-title">HandBags</a> <a
 											href="#">Kids</a> <a href="#">Mens</a> <a href="#">Student</a>
@@ -211,17 +219,17 @@
 											href="#">Kids</a> <a href="#">Mens</a> <a href="#">Womens</a>
 										</span>
 									</div></li>
-								<li><a href="#"><img src="img/menu-l/8.png" alt="" />Health
+								<li><a href="#"><img src="${url}/statics/img/menu-l/8.png" alt="" />Health
 										& Beauty</a></li>
-								<li><a href="#"><img src="img/menu-l/9.png" alt="" />Toys
+								<li><a href="#"><img src="${url}/statics/img/menu-l/9.png" alt="" />Toys
 										& Hobbies</a></li>
-								<li><a href="#"><img src="img/menu-l/10.png" alt="" />Holiday
+								<li><a href="#"><img src="${url}/statics/img/menu-l/10.png" alt="" />Holiday
 										Supplies & Gifts</a></li>
-								<li><a href="#"><img src="img/menu-l/11.png" alt="" />Jewelry
+								<li><a href="#"><img src="${url}/statics/img/menu-l/11.png" alt="" />Jewelry
 										& Watches</a></li>
-								<li><a href="#"><img src="img/menu-l/5.png" alt="" />Smartphone
+								<li><a href="#"><img src="${url}/statics/img/menu-l/5.png" alt="" />Smartphone
 										& Watches</a></li>
-								<li><a href="#"><img src="img/menu-l/4.png" alt="" />Health
+								<li><a href="#"><img src="${url}/statics/img/menu-l/4.png" alt="" />Health
 										Watches</a></li>
 							</ul>
 						</div>

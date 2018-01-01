@@ -21,7 +21,7 @@ public interface UserDao extends BaseDao<User>{
 	 * @return
 	 * @throws SQLException 
 	 */
-	User getUserByLoginPass(String loginName, String password) throws SQLException;
+	User getUserByLoginName(String loginName) throws SQLException;
 	/**
 	 * 
 	 * 获得所有用户的ResultSet结果集！
@@ -35,5 +35,18 @@ public interface UserDao extends BaseDao<User>{
 	 * @return
 	 */
 	public List<User> getAllUser();
+	/**
+	 * 
+	 * 添加用户接口！
+	 * 
+	 * @author 牛牛
+	 *
+	 * @date 2017-12-31
+	 *
+	 * @param user
+	 * @return
+	 * @throws SQLException 
+	 */
+	int addUser(User user) throws SQLException;
 	
 }

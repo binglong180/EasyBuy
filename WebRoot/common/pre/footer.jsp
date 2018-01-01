@@ -3,7 +3,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-
 <title>My JSP 'footer.jsp' starting page</title>
 
 <meta http-equiv="pragma" content="no-cache">
@@ -14,144 +13,16 @@
 <!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-<link rel="icon" href="img/favicon.png" />
+<link rel="icon" href="${url}/statics/img/favicon.png" />
 <!-- Place favicon.ico in the root directory -->
 
 <!-- bootstrap.min.css -->
 </head>
 
 <body>
-	<!-- brand-area-start -->
-	<div class="brand-area pb-60 dotted-style-2">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="section-title">
-						<h3>Logo Brands & Clients</h3>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="brand-active border-1">
-						<div class="single-brand">
-							<a href="#"><img src="img/brand/1.jpg" alt="" /> </a>
-						</div>
-						<div class="single-brand">
-							<a href="#"><img src="img/brand/2.jpg" alt="" /> </a>
-						</div>
-						<div class="single-brand">
-							<a href="#"><img src="img/brand/3.jpg" alt="" /> </a>
-						</div>
-						<div class="single-brand">
-							<a href="#"><img src="img/brand/4.jpg" alt="" /> </a>
-						</div>
-						<div class="single-brand">
-							<a href="#"><img src="img/brand/5.jpg" alt="" /> </a>
-						</div>
-						<div class="single-brand">
-							<a href="#"><img src="img/brand/6.jpg" alt="" /> </a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- brand-area-end -->
-	<!-- blog-area-start -->
-	<div class="blog-area dotted-style-2  pb-60">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="section-title">
-						<h3>latest from blog</h3>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="blog-active">
-					<div class="col-lg-12">
-						<div class="single-blog">
-							<div class="blog-img">
-								<img src="img/blog/1.jpg" alt="" />
-							</div>
-							<div class="blog-content-inner">
-								<div class="blog-content white-bg">
-									<a href="#"><h4>LATIN PROFESSOR</h4> </a>
-									<p class="mb-0">Donec vitae hendrerit arcu, sit amet
-										faucibus nisl..</p>
-									<a href="#" class="read-more text-capitalize">Read more <i
-										class="fa fa-arrow-circle-right"></i> </a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-12">
-						<div class="single-blog">
-							<div class="blog-img">
-								<img src="img/blog/2.jpg" alt="" />
-							</div>
-							<div class="blog-content-inner">
-								<div class="blog-content white-bg">
-									<a href="#"><h4>LATIN PROFESSOR</h4> </a>
-									<p class="mb-0">Donec vitae hendrerit arcu, sit amet
-										faucibus nisl..</p>
-									<a href="#" class="read-more text-capitalize">Read more <i
-										class="fa fa-arrow-circle-right"></i> </a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-12">
-						<div class="single-blog">
-							<div class="blog-img">
-								<img src="img/blog/3.jpg" alt="" />
-							</div>
-							<div class="blog-content-inner">
-								<div class="blog-content white-bg">
-									<a href="#"><h4>welcome to plazathemes</h4> </a>
-									<p class="mb-0">Donec vitae hendrerit arcu, sit amet
-										faucibus nisl..</p>
-									<a href="#" class="read-more text-capitalize">Read more <i
-										class="fa fa-arrow-circle-right"></i> </a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- blog-area-end -->
-	<!-- newletter-area-start -->
-	<div class="newletter-area ptb-30">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-					<div class="newletter-logo">
-						<a href="#"><img src="img/logo.png" alt="" /> </a>
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<div class="subscribe-form">
-						<form action="#">
-							<input placeholder="Email address..." type="text">
-							<button class="subscribe">Subscribe</button>
-						</form>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-					<div class="subscribe-social text-right">
-						<a href="#"><i class="fa fa-youtube"></i> </a> <a href="#"><i
-							class="fa fa-facebook"></i> </a> <a href="#"><i
-							class="fa fa-google-plus"></i> </a> <a href="#"><i
-							class="fa fa-twitter"></i> </a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- newletter-area-end -->
+	
+	
+	
 	<footer> <!-- footer-top-area -->
 	<div class="footer-top-area border-1 ptb-30 bg-color-3">
 		<div class="container">
@@ -233,22 +104,22 @@
 					<div class="footer-widget">
 						<div class="footer-widget-img">
 							<div class="single-img">
-								<a href="#"><img src="img/footer/1.jpg" alt="" /> </a>
+								<a href="#"><img src="${url}/statics/img/footer/1.jpg" alt="" /> </a>
 							</div>
 							<div class="single-img">
-								<a href="#"><img src="img/footer/2.jpg" alt="" /> </a>
+								<a href="#"><img src="${url}/statics/img/footer/2.jpg" alt="" /> </a>
 							</div>
 							<div class="single-img">
-								<a href="#"><img src="img/footer/3.jpg" alt="" /> </a>
+								<a href="#"><img src="${url}/statics/img/footer/3.jpg" alt="" /> </a>
 							</div>
 							<div class="single-img">
-								<a href="#"><img src="img/footer/4.jpg" alt="" /> </a>
+								<a href="#"><img src="${url}/statics/img/footer/4.jpg" alt="" /> </a>
 							</div>
 							<div class="single-img">
-								<a href="#"><img src="img/footer/5.jpg" alt="" /> </a>
+								<a href="#"><img src="${url}/statics/img/footer/5.jpg" alt="" /> </a>
 							</div>
 							<div class="single-img">
-								<a href="#"><img src="img/footer/6.jpg" alt="" /> </a>
+								<a href="#"><img src="${url}/statics/img/footer/6.jpg" alt="" /> </a>
 							</div>
 						</div>
 					</div>
@@ -263,16 +134,15 @@
 			<div class="copyright-border ptb-30">
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-						<div class="copyright text-left">
+						<div class="copyright text-left" style="padding:0px">
 							<p>
-								Copyright &copy; 2017.Company name All rights reserved.<a
-									target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+								Copyright &copy; 2017.Company name All rights reserved.
 							</p>
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 						<div class="payment text-right">
-							<a href="#"><img src="img/payment.png" alt="" /> </a>
+							<a href="#"><img src="${url}/statics/img/payment.png" alt="" /> </a>
 						</div>
 					</div>
 				</div>
@@ -294,29 +164,30 @@
 	<!-- social_block-end -->
 </body>
 <!-- all js here -->
+<script src="${url}/statics/js/vendor/modernizr-2.8.3.min.js"></script>
 <!-- jquery-1.12.0 -->
-<script src="js/vendor/jquery-1.12.4.js"></script>
+<script src="${url}/statics/js/vendor/jquery-1.12.4.js"></script>
 <!-- bootstrap.min.js -->
-<script src="js/bootstrap.min.js"></script>
+<script src="${url}/statics/js/bootstrap.min.js"></script>
 <!-- nivo.slider.js -->
-<script src="js/jquery.nivo.slider.pack.js"></script>
+<script src="${url}/statics/js/jquery.nivo.slider.pack.js"></script>
 <!-- jquery-ui.min.js -->
-<script src="js/jquery-ui.min.js"></script>
+<script src="${url}/statics/js/jquery-ui.min.js"></script>
 <!-- jquery.magnific-popup.min.js -->
-<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="${url}/statics/js/jquery.magnific-popup.min.js"></script>
 <!-- jquery.meanmenu.min.js -->
-<script src="js/jquery.meanmenu.js"></script>
+<script src="${url}/statics/js/jquery.meanmenu.js"></script>
 <!-- jquery.scrollup.min.js-->
-<script src="js/jquery.scrollup.min.js"></script>
+<script src="${url}/statics/js/jquery.scrollup.min.js"></script>
 <!-- owl.carousel.min.js -->
-<script src="js/owl.carousel.min.js"></script>
+<script src="${url}/statics/js/owl.carousel.min.js"></script>
 <!-- plugins.js -->
-<script src="js/plugins.js"></script>
+<script src="${url}/statics/js/plugins.js"></script>
 <!-- main.js -->
-<script src="js/main.js"></script>
-		<!-- Google Map js -->
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
-		<script>
+<script src="${url}/statics/js/main.js"></script>
+<!-- Google Map js -->
+<!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
+<!-- <script>
 			function initialize() {
 			  var mapOptions = {
 				zoom: 15,
@@ -333,9 +204,16 @@
 			  });
 			}
 			google.maps.event.addDomListener(window, 'load', initialize);
-		</script>		
+		</script>		 -->
 <!--  表单验证的包-->
-<script src="js/jquery.validate.js"></script>
+<script src="${url}/statics/js/jquery.validate.js"></script>
 <!--  register.js 编写验证-->
-<script type="text/javascript" src="js/myJs/register.js"></script>
+<script type="text/javascript"
+	src="${url}/statics/js/register/register.js"></script>
+<!-- 控制模态窗口 -->
+<script type="text/javascript" src="${url}/statics/js/shade.js"></script>
+<!-- 登录控制 -->
+<script type="text/javascript" src="${url}/statics/js/login/login.js"></script>
+<!-- MD5加密-->
+<script type="text/javascript" src="${url}/statics/js/md5/md5.js"></script>
 </html>

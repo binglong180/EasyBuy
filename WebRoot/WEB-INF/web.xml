@@ -30,9 +30,11 @@
         <include-coda></include-coda>  
     </jsp-property-group>  
 </jsp-config> 
+
 <context-param>
 	<description>全文参数</description>
 	<param-name>contextParam</param-name>
 	<param-value>全文参数context-param的值</param-value>
 </context-param>
+
 </web-app>

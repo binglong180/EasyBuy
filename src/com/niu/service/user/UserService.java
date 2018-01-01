@@ -20,7 +20,7 @@ public interface UserService extends BaseService<User>{
 	 * @return
 	 * @throws SQLException 
 	 */
-	User getUserByLoginPass(String loginName, String password) throws SQLException;
+	User getUserByLoginName(String loginName);
 	/**
 	 * 
 	 * 获得所有用户的ResultSet结果集！
@@ -34,4 +34,6 @@ public interface UserService extends BaseService<User>{
 	 * @return
 	 */
 	public List<User> getAllUser();
+	
+	int addUser(User user);
 }
