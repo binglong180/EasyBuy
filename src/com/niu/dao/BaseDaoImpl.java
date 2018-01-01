@@ -60,21 +60,5 @@ public abstract class BaseDaoImpl<T> implements BaseDao<T> {
 		}
 		return rs;
 	}
-
-	/**
-	 * 
-	 * 用得到的result进行对象的赋值！
-	 * 
-	 * @author 牛牛
-	 * 
-	 * @date 2017-12-28
-	 * 
-	 * @param rs
-	 * @return
-	 * @return
-	 * @throws SQLException
-	 */
-	public abstract T setTableByRs(ResultSet rs) throws SQLException;
-
-	public abstract List<T> setListByRs(ResultSet rs) throws SQLException;
+	public abstract T setTableByRs(ResultSet rs) throws SQLException ;
 }

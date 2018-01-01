@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.niu.bean.ProductCategory;
 import com.niu.service.productCategory.ProductCategoryService;
 import com.niu.service.productCategory.ProductCategoryServiceImpl;
+import com.niu.util.ProductCategoryView;
 import com.niu.web.AbstractServlet;
 
 @WebServlet(value = "/Home", loadOnStartup = 2)
@@ -23,15 +24,10 @@ public class HomeServlet extends AbstractServlet {
 	}
 
 	public String index(HttpServletRequest request, HttpServletResponse response) {
-		List<ProductCategory> productCategoryList = null;
-		try {
-			productCategoryList = productCategoryService.selectByParentId(0);
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		request.setAttribute("productCategoryList",
-				productCategoryList);
+		List<ProductCategoryView> productCategoryViewList = null;
+		productCategoryViewList = productCategoryService.getAllProductCategory();
+		request.setAttribute("productCategoryViewList",
+				productCategoryViewList);
 		return "pre/index";
 	}
 

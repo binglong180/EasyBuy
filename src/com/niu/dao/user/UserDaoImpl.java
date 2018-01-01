@@ -1,9 +1,8 @@
 package com.niu.dao.user;
 
-import java.sql.PreparedStatement;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 import com.mysql.jdbc.Connection;
@@ -47,12 +46,6 @@ public class UserDaoImpl extends BaseDaoImpl<User> implements UserDao {
 
 	@Override
 	public List<User> getAllUser() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<User> setListByRs(ResultSet rs) throws SQLException {
 		// TODO Auto-generated method stub
 		return null;
 	}
