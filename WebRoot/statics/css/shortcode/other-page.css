@@ -609,7 +609,7 @@ h4.wishlist-share-title {
 .form-action > label {
   line-height: 35px;
 }
-.form-action input[type="submit"] {
+.form-action input[type="button"] {
     background: #252525 none repeat scroll 0 0;
     border: medium none;
     border-radius: 0;
@@ -628,7 +628,7 @@ h4.wishlist-share-title {
     transition: all 0.3s ease 0s;
 	width:100px;
 }
-.form-action input[type="submit"]:hover {
+.form-action input[type="button"]:hover {
     background: #F4A137;
 }
 /*=========================== 

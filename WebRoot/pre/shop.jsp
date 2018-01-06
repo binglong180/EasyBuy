@@ -33,8 +33,7 @@
 	<div class="breadcrumb-area">
 		<div class="container">
 			<ol class="breadcrumb">
-				<li><a href="index.jsp"><i class="fa fa-home"></i> 首页</a>
-				</li>
+				<li><a href="index.jsp"><i class="fa fa-home"></i> 首页</a></li>
 				<li class="active">商城</li>
 			</ol>
 		</div>
@@ -50,25 +49,21 @@
 						<div class="sidebar-widget">
 							<h3 class="sidebar-title">Availability</h3>
 							<ul class="sidebar-menu">
-								<li><a href="#">In stock <span>(13)</span> </a>
-								</li>
-								<li><a href="#">In stock <span>(13)</span> </a>
-								</li>
+								<li><a href="#">In stock <span>(13)</span> </a></li>
+								<li><a href="#">In stock <span>(13)</span> </a></li>
 							</ul>
 						</div>
 						<div class="sidebar-widget">
 							<h3 class="sidebar-title">Condition</h3>
 							<ul class="sidebar-menu">
-								<li><a href="#">New <span>(11)</span> </a>
-								</li>
+								<li><a href="#">New <span>(11)</span> </a></li>
 							</ul>
 						</div>
 						<div class="sidebar-widget">
 							<h3 class="sidebar-title">Manufacturer</h3>
 							<ul class="sidebar-menu">
 								<li><a href="#"> Fashion Manufacturer <span>(13)</span>
-								</a>
-								</li>
+								</a></li>
 							</ul>
 						</div>
 						<div class="sidebar-widget">
@@ -85,70 +80,48 @@
 						<div class="sidebar-widget">
 							<h3 class="sidebar-title">Size</h3>
 							<ul class="sidebar-menu">
-								<li><a href="#"> S <span>(13)</span> </a>
-								</li>
-								<li><a href="#"> M <span>(15)</span> </a>
-								</li>
-								<li><a href="#"> L <span>(6)</span> </a>
-								</li>
+								<li><a href="#"> S <span>(13)</span> </a></li>
+								<li><a href="#"> M <span>(15)</span> </a></li>
+								<li><a href="#"> L <span>(6)</span> </a></li>
 							</ul>
 						</div>
 						<div class="sidebar-widget">
 							<h3 class="sidebar-title">Size</h3>
 							<ul class="sidebar-menu">
-								<li><a href="#"> Beige <span>(2)</span> </a>
-								</li>
-								<li><a href="#"> White <span>(4)</span> </a>
-								</li>
-								<li><a href="#"> Black <span>(4)</span> </a>
-								</li>
-								<li><a href="#"> Orange <span>(6)</span> </a>
-								</li>
-								<li><a href="#"> Blue <span>(4)</span> </a>
-								</li>
-								<li><a href="#"> Green <span>(1)</span> </a>
-								</li>
-								<li><a href="#"> Yellow <span>(5)</span> </a>
-								</li>
-								<li><a href="#"> Pink <span>(2)</span> </a>
-								</li>
+								<li><a href="#"> Beige <span>(2)</span> </a></li>
+								<li><a href="#"> White <span>(4)</span> </a></li>
+								<li><a href="#"> Black <span>(4)</span> </a></li>
+								<li><a href="#"> Orange <span>(6)</span> </a></li>
+								<li><a href="#"> Blue <span>(4)</span> </a></li>
+								<li><a href="#"> Green <span>(1)</span> </a></li>
+								<li><a href="#"> Yellow <span>(5)</span> </a></li>
+								<li><a href="#"> Pink <span>(2)</span> </a></li>
 							</ul>
 						</div>
 						<div class="sidebar-widget">
 							<h3 class="sidebar-title">Compositions</h3>
 							<ul class="sidebar-menu">
-								<li><a href="#"> Cotton <span>(2)</span> </a>
-								</li>
-								<li><a href="#"> Polyester <span>(4)</span> </a>
-								</li>
-								<li><a href="#"> Viscose <span>(4)</span> </a>
-								</li>
+								<li><a href="#"> Cotton <span>(2)</span> </a></li>
+								<li><a href="#"> Polyester <span>(4)</span> </a></li>
+								<li><a href="#"> Viscose <span>(4)</span> </a></li>
 							</ul>
 						</div>
 						<div class="sidebar-widget">
 							<h3 class="sidebar-title">Styles</h3>
 							<ul class="sidebar-menu">
-								<li><a href="#"> Casual <span>(2)</span> </a>
-								</li>
-								<li><a href="#"> Dressy <span>(4)</span> </a>
-								</li>
-								<li><a href="#"> Girly <span>(4)</span> </a>
-								</li>
+								<li><a href="#"> Casual <span>(2)</span> </a></li>
+								<li><a href="#"> Dressy <span>(4)</span> </a></li>
+								<li><a href="#"> Girly <span>(4)</span> </a></li>
 							</ul>
 						</div>
 						<div class="sidebar-widget">
 							<h3 class="sidebar-title">Properties</h3>
 							<ul class="sidebar-menu">
-								<li><a href="#">Colorful Dress <span>(2)</span> </a>
-								</li>
-								<li><a href="#">Maxi Dress <span>(4)</span> </a>
-								</li>
-								<li><a href="#">Midi Dress <span>(4)</span> </a>
-								</li>
-								<li><a href="#">Short Dress <span>(3)</span> </a>
-								</li>
-								<li><a href="#">Short Sleeve <span>(2)</span> </a>
-								</li>
+								<li><a href="#">Colorful Dress <span>(2)</span> </a></li>
+								<li><a href="#">Maxi Dress <span>(4)</span> </a></li>
+								<li><a href="#">Midi Dress <span>(4)</span> </a></li>
+								<li><a href="#">Short Dress <span>(3)</span> </a></li>
+								<li><a href="#">Short Sleeve <span>(2)</span> </a></li>
 							</ul>
 						</div>
 					</div>
@@ -165,12 +138,10 @@
 								<ul class="shop-tab f-left" role="tablist">
 									<li role="presentation" class="active"><a href="#home"
 										data-toggle="tab"><i class="fa fa-th-large"
-											aria-hidden="true"></i> </a>
-									</li>
+											aria-hidden="true"></i> </a></li>
 									<li role="presentation"><a href="#profile"
 										data-toggle="tab"><i class="fa fa-th-list"
-											aria-hidden="true"></i> </a>
-									</li>
+											aria-hidden="true"></i> </a></li>
 								</ul>
 								<div class="selector-field f-left ml-20 hidden-xs">
 									<form action="#">
@@ -205,667 +176,263 @@
 							<div class="tab-content">
 								<div role="tabpanel" class="tab-pane active" id="home">
 									<div class="row">
-										<div class="col-lg-4 col-md-4 col-sm-6">
-											<div class="single-product mb-30  white-bg">
-												<div class="product-img pt-20">
-													<a href="#"><img src="img/product/1.jpg" alt="" /> </a>
-												</div>
-												<div class="product-content product-i">
-													<div class="pro-title">
-														<h4>
-															<a href="product-details.html">Moebius Table</a>
-														</h4>
+										<c:forEach items="$">
+											<div class="col-lg-4 col-md-4 col-sm-6">
+												<div class="single-product mb-30  white-bg">
+													<div class="product-img pt-20">
+														<a href="#"><img src="img/product/1.jpg" alt="" /> </a>
 													</div>
-													<div class="pro-rating ">
-														<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star-o"></i> </a>
-													</div>
-													<div class="price-box">
-														<span class="price product-price">$400.00</span>
-													</div>
-													<div class="product-icon">
-														<div class="product-icon-left f-left">
-															<a href="#"><i class="fa fa-shopping-cart"></i>Add to
-																Cart</a>
+													<div class="product-content product-i">
+														<div class="pro-title">
+															<h4>
+																<a href="product-details.html">Moebius Table</a>
+															</h4>
 														</div>
-														<div class="product-icon-right floatright">
-															<a href="#" data-toggle="tooltip" title="Compare"><i
-																class="fa fa-exchange"></i> </a> <a href="#"
-																data-toggle="tooltip" title="Wishlist"><i
-																class="fa fa-heart"></i> </a>
+														<div class="pro-rating ">
+															<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star-o"></i> </a>
+														</div>
+														<div class="price-box">
+															<span class="price product-price">$400.00</span>
+														</div>
+														<div class="product-icon">
+															<div class="product-icon-left f-left">
+																<a href="#"><i class="fa fa-shopping-cart"></i>Add
+																	to Cart</a>
+															</div>
+															<div class="product-icon-right floatright">
+																<a href="#" data-toggle="tooltip" title="Compare"><i
+																	class="fa fa-exchange"></i> </a> <a href="#"
+																	data-toggle="tooltip" title="Wishlist"><i
+																	class="fa fa-heart"></i> </a>
+															</div>
 														</div>
 													</div>
+													<span class="new">new</span>
 												</div>
-												<span class="new">new</span>
 											</div>
-										</div>
-										<div class="col-lg-4 col-md-4 col-sm-6">
-											<div class="single-product mb-30  white-bg">
-												<div class="product-img pt-20">
-													<a href="#"><img src="img/product/3.jpg" alt="" /> </a>
-												</div>
-												<div class="product-content product-i">
-													<div class="pro-title">
-														<h4>
-															<a href="product-details.html">Moebius Table</a>
-														</h4>
-													</div>
-													<div class="pro-rating ">
-														<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star-o"></i> </a>
-													</div>
-													<div class="price-box">
-														<span class="price product-price">$400.00</span>
-													</div>
-													<div class="product-icon">
-														<div class="product-icon-left f-left">
-															<a href="#"><i class="fa fa-shopping-cart"></i>Add to
-																Cart</a>
-														</div>
-														<div class="product-icon-right floatright">
-															<a href="#" data-toggle="tooltip" title="Compare"><i
-																class="fa fa-exchange"></i> </a> <a href="#"
-																data-toggle="tooltip" title="Wishlist"><i
-																class="fa fa-heart"></i> </a>
-														</div>
-													</div>
-												</div>
-												<span class="new">new</span>
-											</div>
-										</div>
-										<div class="col-lg-4 col-md-4 col-sm-6">
-											<div class="single-product mb-30 white-bg">
-												<div class="product-img pt-20">
-													<a href="#"><img src="img/product/4.jpg" alt="" /> </a>
-												</div>
-												<div class="product-content product-i">
-													<div class="pro-title">
-														<h4>
-															<a href="product-details.html">Moebius Table</a>
-														</h4>
-													</div>
-													<div class="pro-rating ">
-														<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star-o"></i> </a>
-													</div>
-													<div class="price-box">
-														<span class="price product-price">$400.00</span>
-													</div>
-													<div class="product-icon">
-														<div class="product-icon-left f-left">
-															<a href="#"><i class="fa fa-shopping-cart"></i>Add to
-																Cart</a>
-														</div>
-														<div class="product-icon-right floatright">
-															<a href="#" data-toggle="tooltip" title="Compare"><i
-																class="fa fa-exchange"></i> </a> <a href="#"
-																data-toggle="tooltip" title="Wishlist"><i
-																class="fa fa-heart"></i> </a>
-														</div>
-													</div>
-												</div>
-												<span class="new">new</span>
-											</div>
-										</div>
-										<div class="col-lg-4 col-md-4 col-sm-6">
-											<div class="single-product mb-30  white-bg">
-												<div class="product-img pt-20">
-													<a href="#"><img src="img/product/5.jpg" alt="" /> </a>
-												</div>
-												<div class="product-content product-i">
-													<div class="pro-title">
-														<h4>
-															<a href="product-details.html">Moebius Table</a>
-														</h4>
-													</div>
-													<div class="pro-rating ">
-														<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star-o"></i> </a>
-													</div>
-													<div class="price-box">
-														<span class="price product-price">$400.00</span>
-													</div>
-													<div class="product-icon">
-														<div class="product-icon-left f-left">
-															<a href="#"><i class="fa fa-shopping-cart"></i>Add to
-																Cart</a>
-														</div>
-														<div class="product-icon-right floatright">
-															<a href="#" data-toggle="tooltip" title="Compare"><i
-																class="fa fa-exchange"></i> </a> <a href="#"
-																data-toggle="tooltip" title="Wishlist"><i
-																class="fa fa-heart"></i> </a>
-														</div>
-													</div>
-												</div>
-												<span class="new">new</span>
-											</div>
-										</div>
-										<div class="col-lg-4 col-md-4 col-sm-6">
-											<div class="single-product mb-30 white-bg">
-												<div class="product-img pt-20">
-													<a href="#"><img src="img/product/6.jpg" alt="" /> </a>
-												</div>
-												<div class="product-content product-i">
-													<div class="pro-title">
-														<h4>
-															<a href="product-details.html">Moebius Table</a>
-														</h4>
-													</div>
-													<div class="pro-rating ">
-														<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star-o"></i> </a>
-													</div>
-													<div class="price-box">
-														<span class="price product-price">$400.00</span>
-													</div>
-													<div class="product-icon">
-														<div class="product-icon-left f-left">
-															<a href="#"><i class="fa fa-shopping-cart"></i>Add to
-																Cart</a>
-														</div>
-														<div class="product-icon-right floatright">
-															<a href="#" data-toggle="tooltip" title="Compare"><i
-																class="fa fa-exchange"></i> </a> <a href="#"
-																data-toggle="tooltip" title="Wishlist"><i
-																class="fa fa-heart"></i> </a>
-														</div>
-													</div>
-												</div>
-												<span class="new">new</span>
-											</div>
-										</div>
-										<div class="col-lg-4 col-md-4 col-sm-6">
-											<div class="single-product mb-30 white-bg">
-												<div class="product-img pt-20">
-													<a href="#"><img src="img/product/7.jpg" alt="" /> </a>
-												</div>
-												<div class="product-content product-i">
-													<div class="pro-title">
-														<h4>
-															<a href="product-details.html">Moebius Table</a>
-														</h4>
-													</div>
-													<div class="pro-rating ">
-														<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star-o"></i> </a>
-													</div>
-													<div class="price-box">
-														<span class="price product-price">$400.00</span>
-													</div>
-													<div class="product-icon">
-														<div class="product-icon-left f-left">
-															<a href="#"><i class="fa fa-shopping-cart"></i>Add to
-																Cart</a>
-														</div>
-														<div class="product-icon-right floatright">
-															<a href="#" data-toggle="tooltip" title="Compare"><i
-																class="fa fa-exchange"></i> </a> <a href="#"
-																data-toggle="tooltip" title="Wishlist"><i
-																class="fa fa-heart"></i> </a>
-														</div>
-													</div>
-												</div>
-												<span class="new">new</span>
-											</div>
-										</div>
-										<div class="col-lg-4 col-md-4 col-sm-6">
-											<div class="single-product mb-30 white-bg">
-												<div class="product-img pt-20">
-													<a href="#"><img src="img/product/8.jpg" alt="" /> </a>
-												</div>
-												<div class="product-content product-i">
-													<div class="pro-title">
-														<h4>
-															<a href="product-details.html">Moebius Table</a>
-														</h4>
-													</div>
-													<div class="pro-rating ">
-														<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star-o"></i> </a>
-													</div>
-													<div class="price-box">
-														<span class="price product-price">$400.00</span>
-													</div>
-													<div class="product-icon">
-														<div class="product-icon-left f-left">
-															<a href="#"><i class="fa fa-shopping-cart"></i>Add to
-																Cart</a>
-														</div>
-														<div class="product-icon-right floatright">
-															<a href="#" data-toggle="tooltip" title="Compare"><i
-																class="fa fa-exchange"></i> </a> <a href="#"
-																data-toggle="tooltip" title="Wishlist"><i
-																class="fa fa-heart"></i> </a>
-														</div>
-													</div>
-												</div>
-												<span class="new">new</span>
-											</div>
-										</div>
-										<div class="col-lg-4 col-md-4 col-sm-6">
-											<div class="single-product mb-30 white-bg">
-												<div class="product-img pt-20">
-													<a href="#"><img src="img/product/9.jpg" alt="" /> </a>
-												</div>
-												<div class="product-content product-i">
-													<div class="pro-title">
-														<h4>
-															<a href="product-details.html">Moebius Table</a>
-														</h4>
-													</div>
-													<div class="pro-rating ">
-														<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star-o"></i> </a>
-													</div>
-													<div class="price-box">
-														<span class="price product-price">$400.00</span>
-													</div>
-													<div class="product-icon">
-														<div class="product-icon-left f-left">
-															<a href="#"><i class="fa fa-shopping-cart"></i>Add to
-																Cart</a>
-														</div>
-														<div class="product-icon-right floatright">
-															<a href="#" data-toggle="tooltip" title="Compare"><i
-																class="fa fa-exchange"></i> </a> <a href="#"
-																data-toggle="tooltip" title="Wishlist"><i
-																class="fa fa-heart"></i> </a>
-														</div>
-													</div>
-												</div>
-												<span class="new">new</span>
-											</div>
-										</div>
-										<div class="col-lg-4 col-md-4 col-sm-6">
-											<div class="single-product mb-30 white-bg">
-												<div class="product-img pt-20">
-													<a href="#"><img src="img/product/10.jpg" alt="" /> </a>
-												</div>
-												<div class="product-content product-i">
-													<div class="pro-title">
-														<h4>
-															<a href="product-details.html">Moebius Table</a>
-														</h4>
-													</div>
-													<div class="pro-rating ">
-														<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star-o"></i> </a>
-													</div>
-													<div class="price-box">
-														<span class="price product-price">$400.00</span>
-													</div>
-													<div class="product-icon">
-														<div class="product-icon-left f-left">
-															<a href="#"><i class="fa fa-shopping-cart"></i>Add to
-																Cart</a>
-														</div>
-														<div class="product-icon-right floatright">
-															<a href="#" data-toggle="tooltip" title="Compare"><i
-																class="fa fa-exchange"></i> </a> <a href="#"
-																data-toggle="tooltip" title="Wishlist"><i
-																class="fa fa-heart"></i> </a>
-														</div>
-													</div>
-												</div>
-												<span class="new">new</span>
-											</div>
-										</div>
-										<div class="col-lg-4 col-md-4 col-sm-6">
-											<div class="single-product mb-30 white-bg">
-												<div class="product-img pt-20">
-													<a href="#"><img src="img/product/11.jpg" alt="" /> </a>
-												</div>
-												<div class="product-content product-i">
-													<div class="pro-title">
-														<h4>
-															<a href="product-details.html">Moebius Table</a>
-														</h4>
-													</div>
-													<div class="pro-rating ">
-														<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star-o"></i> </a>
-													</div>
-													<div class="price-box">
-														<span class="price product-price">$400.00</span>
-													</div>
-													<div class="product-icon">
-														<div class="product-icon-left f-left">
-															<a href="#"><i class="fa fa-shopping-cart"></i>Add to
-																Cart</a>
-														</div>
-														<div class="product-icon-right floatright">
-															<a href="#" data-toggle="tooltip" title="Compare"><i
-																class="fa fa-exchange"></i> </a> <a href="#"
-																data-toggle="tooltip" title="Wishlist"><i
-																class="fa fa-heart"></i> </a>
-														</div>
-													</div>
-												</div>
-												<span class="new">new</span>
-											</div>
-										</div>
-										<div class="col-lg-4 col-md-4 col-sm-6">
-											<div class="single-product mb-30 white-bg">
-												<div class="product-img pt-20">
-													<a href="#"><img src="img/product/12.jpg" alt="" /> </a>
-												</div>
-												<div class="product-content product-i">
-													<div class="pro-title">
-														<h4>
-															<a href="product-details.html">Moebius Table</a>
-														</h4>
-													</div>
-													<div class="pro-rating ">
-														<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star-o"></i> </a>
-													</div>
-													<div class="price-box">
-														<span class="price product-price">$400.00</span>
-													</div>
-													<div class="product-icon">
-														<div class="product-icon-left f-left">
-															<a href="#"><i class="fa fa-shopping-cart"></i>Add to
-																Cart</a>
-														</div>
-														<div class="product-icon-right floatright">
-															<a href="#" data-toggle="tooltip" title="Compare"><i
-																class="fa fa-exchange"></i> </a> <a href="#"
-																data-toggle="tooltip" title="Wishlist"><i
-																class="fa fa-heart"></i> </a>
-														</div>
-													</div>
-												</div>
-												<span class="new">new</span>
-											</div>
-										</div>
-										<div class="col-lg-4 col-md-4 col-sm-6">
-											<div class="single-product mb-30 white-bg">
-												<div class="product-img pt-20">
-													<a href="#"><img src="img/product/2.jpg" alt="" /> </a>
-												</div>
-												<div class="product-content product-i">
-													<div class="pro-title">
-														<h4>
-															<a href="product-details.html">Moebius Table</a>
-														</h4>
-													</div>
-													<div class="pro-rating ">
-														<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star-o"></i> </a>
-													</div>
-													<div class="price-box">
-														<span class="price product-price">$400.00</span>
-													</div>
-													<div class="product-icon">
-														<div class="product-icon-left f-left">
-															<a href="#"><i class="fa fa-shopping-cart"></i>Add to
-																Cart</a>
-														</div>
-														<div class="product-icon-right floatright">
-															<a href="#" data-toggle="tooltip" title="Compare"><i
-																class="fa fa-exchange"></i> </a> <a href="#"
-																data-toggle="tooltip" title="Wishlist"><i
-																class="fa fa-heart"></i> </a>
-														</div>
-													</div>
-												</div>
-												<span class="new">new</span>
+										</c:forEach>
+
+
+
+
+
+
+
+
+
+										<div class="content-sortpagibar">
+											<div class="product-count display-inline">Showing 1 -
+												12 of 13 items</div>
+											<ul class="shop-pagi display-inline">
+												<li><a href="#"><i class="fa fa-angle-left"></i> </a></li>
+												<li class="active"><a href="#">1</a></li>
+												<li><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+												<li><a href="#"><i class="fa fa-angle-right"></i> </a>
+												</li>
+											</ul>
+											<div class="selector-field f-right">
+												<form action="#">
+													<button class="compare">Compare (1)</button>
+												</form>
 											</div>
 										</div>
 									</div>
-									<div class="content-sortpagibar">
-										<div class="product-count display-inline">Showing 1 - 12
-											of 13 items</div>
-										<ul class="shop-pagi display-inline">
-											<li><a href="#"><i class="fa fa-angle-left"></i> </a>
-											</li>
-											<li class="active"><a href="#">1</a>
-											</li>
-											<li><a href="#">2</a>
-											</li>
-											<li><a href="#">3</a>
-											</li>
-											<li><a href="#"><i class="fa fa-angle-right"></i> </a>
-											</li>
-										</ul>
-										<div class="selector-field f-right">
-											<form action="#">
-												<button class="compare">Compare (1)</button>
-											</form>
-										</div>
-									</div>
-								</div>
-								<div role="tabpanel" class="tab-pane" id="profile">
-									<div class="row">
-										<div class="col-lg-12">
-											<div
-												class="single-product  shop-single-product mb-30 white-bg">
-												<div class="product-img pt-20">
-													<a href="#"><img src="img/product/2.jpg" alt="" /> </a>
-												</div>
-												<div class="product-content">
-													<div class="pro-title">
-														<h4>
-															<a href="product-details.html">Moebius Table</a>
-														</h4>
+									<div role="tabpanel" class="tab-pane" id="profile">
+										<div class="row">
+											<div class="col-lg-12">
+												<div
+													class="single-product  shop-single-product mb-30 white-bg">
+													<div class="product-img pt-20">
+														<a href="#"><img src="img/product/2.jpg" alt="" /> </a>
 													</div>
-													<div class="pro-rating mb-20">
-														<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star-o"></i> </a>
-													</div>
-													<p>Revolutionary multi-touch interface. iPod touch
-														features the same multi-touch screen technology as iPhone.
-														Pinch to zoom in on a photo. Scroll through your songs and
-														videos with a flick. Flip through your library by album
-														artwork with Cover Flow. Gorgeous 3.5-inch widescreen
-														display. Watc..</p>
-													<div class="price-box">
-														<span class="price product-price">$400.00</span>
-													</div>
-													<div class="product-icon">
-														<div class="product-icon-left f-left">
-															<a href="#"><i class="fa fa-shopping-cart"></i>Add to
-																Cart</a>
+													<div class="product-content">
+														<div class="pro-title">
+															<h4>
+																<a href="product-details.html">Moebius Table</a>
+															</h4>
 														</div>
-														<div class="product-icon-right floatright">
-															<a href="#" data-toggle="tooltip" title="Compare"><i
-																class="fa fa-exchange"></i> </a> <a href="#"
-																data-toggle="tooltip" title="Wishlist"><i
-																class="fa fa-heart"></i> </a>
+														<div class="pro-rating mb-20">
+															<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star-o"></i> </a>
+														</div>
+														<p>Revolutionary multi-touch interface. iPod touch
+															features the same multi-touch screen technology as
+															iPhone. Pinch to zoom in on a photo. Scroll through your
+															songs and videos with a flick. Flip through your library
+															by album artwork with Cover Flow. Gorgeous 3.5-inch
+															widescreen display. Watc..</p>
+														<div class="price-box">
+															<span class="price product-price">$400.00</span>
+														</div>
+														<div class="product-icon">
+															<div class="product-icon-left f-left">
+																<a href="#"><i class="fa fa-shopping-cart"></i>Add
+																	to Cart</a>
+															</div>
+															<div class="product-icon-right floatright">
+																<a href="#" data-toggle="tooltip" title="Compare"><i
+																	class="fa fa-exchange"></i> </a> <a href="#"
+																	data-toggle="tooltip" title="Wishlist"><i
+																	class="fa fa-heart"></i> </a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12">
+												<div
+													class="single-product  shop-single-product mb-30 white-bg">
+													<div class="product-img pt-20">
+														<a href="#"><img src="img/product/5.jpg" alt="" /> </a>
+													</div>
+													<div class="product-content">
+														<div class="pro-title">
+															<h4>
+																<a href="product-details.html">Footstool</a>
+															</h4>
+														</div>
+														<div class="pro-rating mb-20">
+															<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star-o"></i> </a>
+														</div>
+														<p>Revolutionary multi-touch interface. iPod touch
+															features the same multi-touch screen technology as
+															iPhone. Pinch to zoom in on a photo. Scroll through your
+															songs and videos with a flick. Flip through your library
+															by album artwork with Cover Flow. Gorgeous 3.5-inch
+															widescreen display. Watc..</p>
+														<div class="price-box">
+															<span class="price product-price">$324.00</span>
+														</div>
+														<div class="product-icon">
+															<div class="product-icon-left f-left">
+																<a href="#"><i class="fa fa-shopping-cart"></i>Add
+																	to Cart</a>
+															</div>
+															<div class="product-icon-right floatright">
+																<a href="#" data-toggle="tooltip" title="Compare"><i
+																	class="fa fa-exchange"></i> </a> <a href="#"
+																	data-toggle="tooltip" title="Wishlist"><i
+																	class="fa fa-heart"></i> </a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12">
+												<div
+													class="single-product  shop-single-product mb-30 white-bg">
+													<div class="product-img pt-20">
+														<a href="#"><img src="img/product/6.jpg" alt="" /> </a>
+													</div>
+													<div class="product-content">
+														<div class="pro-title">
+															<h4>
+																<a href="product-details.html">Como Ottoman</a>
+															</h4>
+														</div>
+														<div class="pro-rating mb-20">
+															<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star-o"></i> </a>
+														</div>
+														<p>Revolutionary multi-touch interface. iPod touch
+															features the same multi-touch screen technology as
+															iPhone. Pinch to zoom in on a photo. Scroll through your
+															songs and videos with a flick. Flip through your library
+															by album artwork with Cover Flow. Gorgeous 3.5-inch
+															widescreen display. Watc..</p>
+														<div class="price-box">
+															<span class="price product-price">$422.00</span>
+														</div>
+														<div class="product-icon">
+															<div class="product-icon-left f-left">
+																<a href="#"><i class="fa fa-shopping-cart"></i>Add
+																	to Cart</a>
+															</div>
+															<div class="product-icon-right floatright">
+																<a href="#" data-toggle="tooltip" title="Compare"><i
+																	class="fa fa-exchange"></i> </a> <a href="#"
+																	data-toggle="tooltip" title="Wishlist"><i
+																	class="fa fa-heart"></i> </a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12">
+												<div
+													class="single-product  shop-single-product mb-30 white-bg">
+													<div class="product-img pt-20">
+														<a href="#"><img src="img/product/9.jpg" alt="" /> </a>
+													</div>
+													<div class="product-content">
+														<div class="pro-title">
+															<h4>
+																<a href="product-details.html">MacBook</a>
+															</h4>
+														</div>
+														<div class="pro-rating mb-20">
+															<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star"></i> </a> <a href="#"><i
+																class="fa fa-star-o"></i> </a>
+														</div>
+														<p>Revolutionary multi-touch interface. iPod touch
+															features the same multi-touch screen technology as
+															iPhone. Pinch to zoom in on a photo. Scroll through your
+															songs and videos with a flick. Flip through your library
+															by album artwork with Cover Flow. Gorgeous 3.5-inch
+															widescreen display. Watc..</p>
+														<div class="price-box">
+															<span class="price product-price">$422.00</span>
+														</div>
+														<div class="product-icon">
+															<div class="product-icon-left f-left">
+																<a href="#"><i class="fa fa-shopping-cart"></i>Add
+																	to Cart</a>
+															</div>
+															<div class="product-icon-right floatright">
+																<a href="#" data-toggle="tooltip" title="Compare"><i
+																	class="fa fa-exchange"></i> </a> <a href="#"
+																	data-toggle="tooltip" title="Wishlist"><i
+																	class="fa fa-heart"></i> </a>
+															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-12">
-											<div
-												class="single-product  shop-single-product mb-30 white-bg">
-												<div class="product-img pt-20">
-													<a href="#"><img src="img/product/5.jpg" alt="" /> </a>
-												</div>
-												<div class="product-content">
-													<div class="pro-title">
-														<h4>
-															<a href="product-details.html">Footstool</a>
-														</h4>
-													</div>
-													<div class="pro-rating mb-20">
-														<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star-o"></i> </a>
-													</div>
-													<p>Revolutionary multi-touch interface. iPod touch
-														features the same multi-touch screen technology as iPhone.
-														Pinch to zoom in on a photo. Scroll through your songs and
-														videos with a flick. Flip through your library by album
-														artwork with Cover Flow. Gorgeous 3.5-inch widescreen
-														display. Watc..</p>
-													<div class="price-box">
-														<span class="price product-price">$324.00</span>
-													</div>
-													<div class="product-icon">
-														<div class="product-icon-left f-left">
-															<a href="#"><i class="fa fa-shopping-cart"></i>Add to
-																Cart</a>
-														</div>
-														<div class="product-icon-right floatright">
-															<a href="#" data-toggle="tooltip" title="Compare"><i
-																class="fa fa-exchange"></i> </a> <a href="#"
-																data-toggle="tooltip" title="Wishlist"><i
-																class="fa fa-heart"></i> </a>
-														</div>
-													</div>
-												</div>
+										<div class="content-sortpagibar">
+											<div class="product-count display-inline">Showing 1 -
+												12 of 13 items</div>
+											<ul class="shop-pagi display-inline">
+												<li><a href="#"><i class="fa fa-angle-left"></i> </a></li>
+												<li class="active"><a href="#">1</a></li>
+												<li><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+												<li><a href="#"><i class="fa fa-angle-right"></i> </a>
+												</li>
+											</ul>
+											<div class="selector-field f-right">
+												<form action="#">
+													<button class="compare">Compare (1)</button>
+												</form>
 											</div>
-										</div>
-										<div class="col-lg-12">
-											<div
-												class="single-product  shop-single-product mb-30 white-bg">
-												<div class="product-img pt-20">
-													<a href="#"><img src="img/product/6.jpg" alt="" /> </a>
-												</div>
-												<div class="product-content">
-													<div class="pro-title">
-														<h4>
-															<a href="product-details.html">Como Ottoman</a>
-														</h4>
-													</div>
-													<div class="pro-rating mb-20">
-														<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star-o"></i> </a>
-													</div>
-													<p>Revolutionary multi-touch interface. iPod touch
-														features the same multi-touch screen technology as iPhone.
-														Pinch to zoom in on a photo. Scroll through your songs and
-														videos with a flick. Flip through your library by album
-														artwork with Cover Flow. Gorgeous 3.5-inch widescreen
-														display. Watc..</p>
-													<div class="price-box">
-														<span class="price product-price">$422.00</span>
-													</div>
-													<div class="product-icon">
-														<div class="product-icon-left f-left">
-															<a href="#"><i class="fa fa-shopping-cart"></i>Add to
-																Cart</a>
-														</div>
-														<div class="product-icon-right floatright">
-															<a href="#" data-toggle="tooltip" title="Compare"><i
-																class="fa fa-exchange"></i> </a> <a href="#"
-																data-toggle="tooltip" title="Wishlist"><i
-																class="fa fa-heart"></i> </a>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-lg-12">
-											<div
-												class="single-product  shop-single-product mb-30 white-bg">
-												<div class="product-img pt-20">
-													<a href="#"><img src="img/product/9.jpg" alt="" /> </a>
-												</div>
-												<div class="product-content">
-													<div class="pro-title">
-														<h4>
-															<a href="product-details.html">MacBook</a>
-														</h4>
-													</div>
-													<div class="pro-rating mb-20">
-														<a href="#"><i class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star"></i> </a> <a href="#"><i
-															class="fa fa-star-o"></i> </a>
-													</div>
-													<p>Revolutionary multi-touch interface. iPod touch
-														features the same multi-touch screen technology as iPhone.
-														Pinch to zoom in on a photo. Scroll through your songs and
-														videos with a flick. Flip through your library by album
-														artwork with Cover Flow. Gorgeous 3.5-inch widescreen
-														display. Watc..</p>
-													<div class="price-box">
-														<span class="price product-price">$422.00</span>
-													</div>
-													<div class="product-icon">
-														<div class="product-icon-left f-left">
-															<a href="#"><i class="fa fa-shopping-cart"></i>Add to
-																Cart</a>
-														</div>
-														<div class="product-icon-right floatright">
-															<a href="#" data-toggle="tooltip" title="Compare"><i
-																class="fa fa-exchange"></i> </a> <a href="#"
-																data-toggle="tooltip" title="Wishlist"><i
-																class="fa fa-heart"></i> </a>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="content-sortpagibar">
-										<div class="product-count display-inline">Showing 1 - 12
-											of 13 items</div>
-										<ul class="shop-pagi display-inline">
-											<li><a href="#"><i class="fa fa-angle-left"></i> </a>
-											</li>
-											<li class="active"><a href="#">1</a>
-											</li>
-											<li><a href="#">2</a>
-											</li>
-											<li><a href="#">3</a>
-											</li>
-											<li><a href="#"><i class="fa fa-angle-right"></i> </a>
-											</li>
-										</ul>
-										<div class="selector-field f-right">
-											<form action="#">
-												<button class="compare">Compare (1)</button>
-											</form>
 										</div>
 									</div>
 								</div>
@@ -875,9 +442,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- shop-area end -->
-
+		<!-- shop-area end -->
 </body>
 <!-- 尾部导入 -->
 <%@include file="../common/pre/footer.jsp"%>

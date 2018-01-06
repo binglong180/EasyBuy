@@ -1,12 +1,9 @@
 package com.niu.web.pre;
 
-import java.io.IOException;
 import java.net.URLEncoder;
 
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -19,7 +16,6 @@ import com.niu.service.user.UserServiceImpl;
 import com.niu.util.EmptyUtil;
 import com.niu.util.MD5Util;
 import com.niu.util.ReturnResult;
-import com.niu.util.UserServletUtil;
 import com.niu.web.AbstractServlet;
 
 @WebServlet(value = { "/Login" }, loadOnStartup = 1)
@@ -93,7 +89,6 @@ public class LoginServelet extends AbstractServlet {
 		req.getSession().removeAttribute("user");
 		result.returnSuccess("注销成功！");
 		return "pre/index";
-
 	}
 
 	@Override

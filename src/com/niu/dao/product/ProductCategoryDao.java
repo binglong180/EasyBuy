@@ -6,11 +6,11 @@ import java.util.List;
 
 import com.niu.bean.ProductCategory;
 import com.niu.dao.BaseDao;
-import com.niu.util.ProductCategoryView;
+import com.niu.util.ProductCategoryBox;
 
 
 
 public interface ProductCategoryDao extends BaseDao<ProductCategory> {
 	public List<ProductCategory> selectByParentId(String parentId) throws SQLException;
-	public List<ProductCategoryView> getAllProductCategory() throws SQLException;
+	public List<ProductCategoryBox> getAllProductCategory() throws SQLException;
 }

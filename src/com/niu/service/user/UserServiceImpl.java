@@ -8,12 +8,13 @@ import com.niu.dao.user.UserDao;
 import com.niu.dao.user.UserDaoImpl;
 import com.niu.service.BaseServiceImpl;
 import com.niu.util.JDBCUtil;
-import com.niu.util.UserServletUtil;
 
 public class UserServiceImpl extends BaseServiceImpl<User> implements
 		UserService {
+
 	@Override
 	public User getUserByLoginName(String loginName) {
+		User user = null;
 		try {
 			conn = JDBCUtil.getConnection();
 			UserDao ud = new UserDaoImpl(conn);
@@ -21,6 +22,8 @@ public class UserServiceImpl extends BaseServiceImpl<User> implements
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} finally {
+			JDBCUtil.closeAll(conn, ps, rs);
 		}
 		return user;
 	}
@@ -52,7 +55,11 @@ public class UserServiceImpl extends BaseServiceImpl<User> implements
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+			}finally{
+				JDBCUtil.closeAll(conn, ps, rs);
 			}
+
+			
 		}
 		return result;
 	}

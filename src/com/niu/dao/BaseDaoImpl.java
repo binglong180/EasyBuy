@@ -3,21 +3,14 @@ package com.niu.dao;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.List;
 
 import com.mysql.jdbc.Connection;
-import com.niu.bean.ProductCategory;
-import com.niu.bean.User;
-import com.niu.util.JDBCUtil;
-import com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.Param;
+import com.mysql.jdbc.Statement;
 
 public abstract class BaseDaoImpl<T> implements BaseDao<T> {
-	protected static Connection conn;
-	protected static PreparedStatement ps;
-	protected static ResultSet rs;
-	protected static User user;
-	protected static ProductCategory productCategory;
+	protected Connection conn;
+	protected PreparedStatement ps;
+	protected ResultSet rs;
 
 	public BaseDaoImpl(Connection conn) {
 		this.conn = conn;
@@ -60,5 +53,6 @@ public abstract class BaseDaoImpl<T> implements BaseDao<T> {
 		}
 		return rs;
 	}
-	public abstract T setTableByRs(ResultSet rs) throws SQLException ;
+
+	public abstract T setTableByRs(ResultSet rs) throws SQLException;
 }

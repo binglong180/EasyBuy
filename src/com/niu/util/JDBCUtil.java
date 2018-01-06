@@ -58,7 +58,7 @@ public class JDBCUtil {
 	 * @throws SQLException
 	 */
 	public static Connection getConnection() throws SQLException {
-		if (conn == null) {
+		if (conn == null||conn.isClosed()) {
 			conn = (Connection) DriverManager.getConnection(url, username,
 					password);
 		}

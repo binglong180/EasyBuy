@@ -22,7 +22,7 @@
 <body>
 	<%@include file="../common/pre/header.jsp"%>
 	<%@include file="../common/pre/search.jsp"%>
-
+	<%@include file="../common/pre/menuDown.jsp"%>
 
 
 
@@ -37,8 +37,10 @@
 						<div class="slider-container">
 							<!-- Slider Image -->
 							<div id="mainSlider" class="nivoSlider slider-image">
-								<img src="${url}/statics/img/slider/1.jpg" alt="" title="#htmlcaption1">
-								<img src="${url}/statics/img/slider/2.jpg" alt="" title="#htmlcaption2">
+								<img src="${url}/statics/img/slider/1.jpg" alt=""
+									title="#htmlcaption1"> <img
+									src="${url}/statics/img/slider/2.jpg" alt=""
+									title="#htmlcaption2">
 							</div>
 						</div>
 					</div>
@@ -46,7 +48,8 @@
 						<div class="slider-product-active">
 							<div class="single-product single-product-sidebar white-bg">
 								<div class="product-img product-img-left">
-									<a href="#"><img src="${url}/statics/img/product/6.jpg" alt="" /> </a>
+									<a href="#"><img src="${url}/statics/img/product/6.jpg"
+										alt="" /> </a>
 								</div>
 								<div class="product-content product-content-right">
 									<div class="pro-title">
@@ -74,7 +77,8 @@
 							</div>
 							<div class="single-product single-product-sidebar white-bg">
 								<div class="product-img product-img-left">
-									<a href="#"><img src="${url}/statics/img/product/9.jpg" alt="" /> </a>
+									<a href="#"><img src="${url}/statics/img/product/9.jpg"
+										alt="" /> </a>
 								</div>
 								<div class="product-content product-content-right">
 									<div class="pro-title">
@@ -106,13 +110,15 @@
 				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 					<div class="slider-sidebar">
 						<div class="slider-single-img mb-20">
-							<a href="#"> <img class="img_a" src="${url}/statics/img/menu-l/1-1.jpg"
-								alt="" /> <img class="img_b" src="${url}/statics/img/menu-l/1-1.jpg" alt="" />
+							<a href="#"> <img class="img_a"
+								src="${url}/statics/img/menu-l/1-1.jpg" alt="" /> <img
+								class="img_b" src="${url}/statics/img/menu-l/1-1.jpg" alt="" />
 							</a>
 						</div>
 						<div class="slider-single-img none-sm">
-							<a href="#"> <img class="img_a" src="${url}/statics/img/menu-l/1-2.jpg"
-								alt="" /> <img class="img_b" src="${url}/statics/img/menu-l/1-2.jpg" alt="" />
+							<a href="#"> <img class="img_a"
+								src="${url}/statics/img/menu-l/1-2.jpg" alt="" /> <img
+								class="img_b" src="${url}/statics/img/menu-l/1-2.jpg" alt="" />
 							</a>
 						</div>
 					</div>
@@ -132,17 +138,17 @@
 					<div class="tab-menu">
 						<ul>
 							<li class="active"><a href="#home" data-toggle="tab"><img
-									src="${url}/statics/img/electronic/1.png" alt="" />Electronics </a>
-							</li>
+									src="${url}/statics/img/electronic/1.png" alt="" />Electronics
+							</a></li>
 							<li><a href="#profile" data-toggle="tab"><img
-									src="${url}/statics/img/electronic/2.png" alt="" />Cameras & Photo</a>
-							</li>
+									src="${url}/statics/img/electronic/2.png" alt="" />Cameras &
+									Photo</a></li>
 							<li><a href="#messages" data-toggle="tab"><img
-									src="${url}/statics/img/electronic/3.png" alt="" />Sports & Outdoors</a>
-							</li>
+									src="${url}/statics/img/electronic/3.png" alt="" />Sports &
+									Outdoors</a></li>
 							<li><a href="#settings" data-toggle="tab"><img
-									src="${url}/statics/img/electronic/4.png" alt="" />Health & Beauty</a>
-							</li>
+									src="${url}/statics/img/electronic/4.png" alt="" />Health &
+									Beauty</a></li>
 						</ul>
 					</div>
 				</div>
@@ -152,13 +158,15 @@
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pad">
 							<div class="single-tab-img">
-								<a href="#"><img src="${url}/statics/img/electronic/1.jpg" alt="" /> </a>
+								<a href="#"><img src="${url}/statics/img/electronic/1.jpg"
+									alt="" /> </a>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6  col-xs-12 pad">
 							<div class="single-product pt-30 pb-20 white-bg">
 								<div class="product-img pb-40">
-									<a href="#"><img src="${url}/statics/img/product/1.jpg" alt="" /> </a>
+									<a href="#"><img src="${url}/statics/img/product/1.jpg"
+										alt="" /> </a>
 								</div>
 								<div class="product-content">
 									<div class="pro-title">
@@ -198,7 +206,8 @@
 								<div class="together-single-product">
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/2.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/2.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -234,7 +243,8 @@
 									</div>
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/3.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/3.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -271,7 +281,8 @@
 								<div class="together-single-product">
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/4.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/4.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -306,7 +317,8 @@
 									</div>
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/5.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/5.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -344,7 +356,8 @@
 								<div class="together-single-product">
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/6.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/6.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -379,7 +392,8 @@
 									</div>
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/7.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/7.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -421,13 +435,15 @@
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pad">
 							<div class="single-tab-img">
-								<a href="#"><img src="${url}/statics/img/electronic/1.jpg" alt="" /> </a>
+								<a href="#"><img src="${url}/statics/img/electronic/1.jpg"
+									alt="" /> </a>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pad">
 							<div class="single-product pt-30 pb-20 white-bg">
 								<div class="product-img pb-40">
-									<a href="#"><img src="${url}/statics/img/product/3.jpg" alt="" /> </a>
+									<a href="#"><img src="${url}/statics/img/product/3.jpg"
+										alt="" /> </a>
 								</div>
 								<div class="product-content">
 									<div class="pro-title">
@@ -467,7 +483,8 @@
 								<div class="together-single-product">
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/7.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/7.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -503,7 +520,8 @@
 									</div>
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/3.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/3.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -540,7 +558,8 @@
 								<div class="together-single-product">
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/10.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/10.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -574,7 +593,8 @@
 									</div>
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/5.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/5.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -612,7 +632,8 @@
 								<div class="together-single-product">
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/6.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/6.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -647,7 +668,8 @@
 									</div>
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/7.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/7.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -689,13 +711,15 @@
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pad">
 							<div class="single-tab-img">
-								<a href="#"><img src="${url}/statics/img/electronic/1.jpg" alt="" /> </a>
+								<a href="#"><img src="${url}/statics/img/electronic/1.jpg"
+									alt="" /> </a>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pad">
 							<div class="single-product pt-30 pb-20 white-bg">
 								<div class="product-img pb-40">
-									<a href="#"><img src="${url}/statics/img/product/5.jpg" alt="" /> </a>
+									<a href="#"><img src="${url}/statics/img/product/5.jpg"
+										alt="" /> </a>
 								</div>
 								<div class="product-content">
 									<div class="pro-title">
@@ -735,7 +759,8 @@
 								<div class="together-single-product">
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/11.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/11.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -771,7 +796,8 @@
 									</div>
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/3.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/3.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -808,7 +834,8 @@
 								<div class="together-single-product">
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/4.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/4.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -843,7 +870,8 @@
 									</div>
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/5.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/5.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -881,7 +909,8 @@
 								<div class="together-single-product">
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/6.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/6.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -916,7 +945,8 @@
 									</div>
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/7.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/7.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -958,13 +988,15 @@
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pad">
 							<div class="single-tab-img">
-								<a href="#"><img src="${url}/statics/img/electronic/1.jpg" alt="" /> </a>
+								<a href="#"><img src="${url}/statics/img/electronic/1.jpg"
+									alt="" /> </a>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pad">
 							<div class="single-product pt-30 pb-20 white-bg">
 								<div class="product-img pb-40">
-									<a href="#"><img src="${url}/statics/img/product/3.jpg" alt="" /> </a>
+									<a href="#"><img src="${url}/statics/img/product/3.jpg"
+										alt="" /> </a>
 								</div>
 								<div class="product-content">
 									<div class="pro-title">
@@ -1004,7 +1036,8 @@
 								<div class="together-single-product">
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/2.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/2.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -1040,7 +1073,8 @@
 									</div>
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/3.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/3.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -1077,7 +1111,8 @@
 								<div class="together-single-product">
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/4.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/4.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -1112,7 +1147,8 @@
 									</div>
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/5.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/5.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -1150,7 +1186,8 @@
 								<div class="together-single-product">
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/6.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/6.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -1185,7 +1222,8 @@
 									</div>
 									<div class="single-product white-bg">
 										<div class="product-img product-container-img">
-											<a href="#"><img src="${url}/statics/img/product/7.jpg" alt="" /> </a>
+											<a href="#"><img src="${url}/statics/img/product/7.jpg"
+												alt="" /> </a>
 										</div>
 										<div class="product-content product-i">
 											<div class="pro-title">
@@ -1241,7 +1279,8 @@
 							<div class="single-product-items">
 								<div class="single-product single-product-sidebar white-bg">
 									<div class="product-img product-img-left">
-										<a href="#"><img src="${url}/statics/img/product/6.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/6.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-content-right">
 										<div class="pro-title">
@@ -1269,7 +1308,8 @@
 								</div>
 								<div class="single-product single-product-sidebar white-bg">
 									<div class="product-img product-img-left">
-										<a href="#"><img src="${url}/statics/img/product/14.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/14.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-content-right">
 										<div class="pro-title">
@@ -1297,7 +1337,8 @@
 								</div>
 								<div class="single-product single-product-sidebar white-bg">
 									<div class="product-img product-img-left">
-										<a href="#"><img src="${url}/statics/img/product/13.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/13.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-content-right">
 										<div class="pro-title">
@@ -1325,7 +1366,8 @@
 								</div>
 								<div class="single-product single-product-sidebar white-bg">
 									<div class="product-img product-img-left">
-										<a href="#"><img src="${url}/statics/img/product/3.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/3.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-content-right">
 										<div class="pro-title">
@@ -1353,7 +1395,8 @@
 								</div>
 								<div class="single-product single-product-sidebar white-bg">
 									<div class="product-img product-img-left">
-										<a href="#"><img src="${url}/statics/img/product/7.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/7.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-content-right">
 										<div class="pro-title">
@@ -1383,7 +1426,8 @@
 							<div class="single-product-items">
 								<div class="single-product single-product-sidebar white-bg">
 									<div class="product-img product-img-left">
-										<a href="#"><img src="${url}/statics/img/product/6.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/6.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-content-right">
 										<div class="pro-title">
@@ -1411,7 +1455,8 @@
 								</div>
 								<div class="single-product single-product-sidebar white-bg">
 									<div class="product-img product-img-left">
-										<a href="#"><img src="${url}/statics/img/product/14.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/14.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-content-right">
 										<div class="pro-title">
@@ -1439,7 +1484,8 @@
 								</div>
 								<div class="single-product single-product-sidebar white-bg">
 									<div class="product-img product-img-left">
-										<a href="#"><img src="${url}/statics/img/product/13.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/13.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-content-right">
 										<div class="pro-title">
@@ -1467,7 +1513,8 @@
 								</div>
 								<div class="single-product single-product-sidebar white-bg">
 									<div class="product-img product-img-left">
-										<a href="#"><img src="${url}/statics/img/product/3.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/3.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-content-right">
 										<div class="pro-title">
@@ -1495,7 +1542,8 @@
 								</div>
 								<div class="single-product single-product-sidebar white-bg">
 									<div class="product-img product-img-left">
-										<a href="#"><img src="${url}/statics/img/product/7.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/7.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-content-right">
 										<div class="pro-title">
@@ -1532,7 +1580,8 @@
 						<div class="special-products-active border-1">
 							<div class="single-product white-bg">
 								<div class="product-img">
-									<a href="#"><img src="${url}/statics/img/product/2.jpg" alt="" /> </a>
+									<a href="#"><img src="${url}/statics/img/product/2.jpg"
+										alt="" /> </a>
 								</div>
 								<div class="product-content">
 									<div class="pro-title">
@@ -1566,7 +1615,8 @@
 							</div>
 							<div class="single-product white-bg">
 								<div class="product-img">
-									<a href="#"><img src="${url}/statics/img/product/5.jpg" alt="" /> </a>
+									<a href="#"><img src="${url}/statics/img/product/5.jpg"
+										alt="" /> </a>
 								</div>
 								<div class="product-content">
 									<div class="pro-title">
@@ -1648,7 +1698,8 @@
 						<div class="feature-product-active border-1">
 							<div class="single-product  white-bg">
 								<div class="product-img pt-20">
-									<a href="#"><img src="${url}/statics/img/product/1.jpg" alt="" /> </a>
+									<a href="#"><img src="${url}/statics/img/product/1.jpg"
+										alt="" /> </a>
 								</div>
 								<div class="product-content product-i">
 									<div class="pro-title">
@@ -1683,7 +1734,8 @@
 							</div>
 							<div class="single-product  white-bg">
 								<div class="product-img pt-20">
-									<a href="#"><img src="${url}/statics/img/product/6.jpg" alt="" /> </a>
+									<a href="#"><img src="${url}/statics/img/product/6.jpg"
+										alt="" /> </a>
 								</div>
 								<div class="product-content product-i">
 									<div class="pro-title">
@@ -1717,7 +1769,8 @@
 							</div>
 							<div class="single-product  white-bg">
 								<div class="product-img pt-20">
-									<a href="#"><img src="${url}/statics/img/product/4.jpg" alt="" /> </a>
+									<a href="#"><img src="${url}/statics/img/product/4.jpg"
+										alt="" /> </a>
 								</div>
 								<div class="product-content product-i">
 									<div class="pro-title">
@@ -1752,7 +1805,8 @@
 							</div>
 							<div class="single-product  white-bg">
 								<div class="product-img pt-20">
-									<a href="#"><img src="${url}/statics/img/product/15.jpg" alt="" /> </a>
+									<a href="#"><img src="${url}/statics/img/product/15.jpg"
+										alt="" /> </a>
 								</div>
 								<div class="product-content product-i">
 									<div class="pro-title">
@@ -1790,8 +1844,9 @@
 					<!-- banner-area -->
 					<div class="banner-area ptb-40">
 						<div class="slider-single-img res">
-							<a href="#"> <img class="img_a" src="${url}/statics/img/banner/1.jpg" alt="" />
-								<img class="img_b" src="${url}/statics/img/banner/1.jpg" alt="" /> </a>
+							<a href="#"> <img class="img_a"
+								src="${url}/statics/img/banner/1.jpg" alt="" /> <img
+								class="img_b" src="${url}/statics/img/banner/1.jpg" alt="" /> </a>
 						</div>
 					</div>
 					<!-- new-product-area -->
@@ -1803,7 +1858,8 @@
 							<div class="new-product-items">
 								<div class="single-product  white-bg">
 									<div class="product-img pt-20">
-										<a href="#"><img src="${url}/statics/img/product/1.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/1.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-i">
 										<div class="pro-title">
@@ -1838,7 +1894,8 @@
 								</div>
 								<div class="single-product  white-bg">
 									<div class="product-img pt-20">
-										<a href="#"><img src="${url}/statics/img/product/7.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/7.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-i">
 										<div class="pro-title">
@@ -1874,7 +1931,8 @@
 							<div class="new-product-items">
 								<div class="single-product  white-bg">
 									<div class="product-img pt-20">
-										<a href="#"><img src="${url}/statics/img/product/11.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/11.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-i">
 										<div class="pro-title">
@@ -1908,7 +1966,8 @@
 								</div>
 								<div class="single-product  white-bg">
 									<div class="product-img pt-20">
-										<a href="#"><img src="${url}/statics/img/product/16.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/16.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-i">
 										<div class="pro-title">
@@ -1944,7 +2003,8 @@
 							<div class="new-product-items">
 								<div class="single-product  white-bg">
 									<div class="product-img pt-20">
-										<a href="#"><img src="${url}/statics/img/product/17.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/17.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-i">
 										<div class="pro-title">
@@ -1979,7 +2039,8 @@
 								</div>
 								<div class="single-product  white-bg">
 									<div class="product-img pt-20">
-										<a href="#"><img src="${url}/statics/img/product/6.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/6.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-i">
 										<div class="pro-title">
@@ -2015,7 +2076,8 @@
 							<div class="new-product-items">
 								<div class="single-product  white-bg">
 									<div class="product-img pt-20">
-										<a href="#"><img src="${url}/statics/img/product/7.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/7.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-i">
 										<div class="pro-title">
@@ -2050,7 +2112,8 @@
 								</div>
 								<div class="single-product  white-bg">
 									<div class="product-img pt-20">
-										<a href="#"><img src="${url}/statics/img/product/2.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/2.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-i">
 										<div class="pro-title">
@@ -2086,7 +2149,8 @@
 							<div class="new-product-items">
 								<div class="single-product  white-bg">
 									<div class="product-img pt-20">
-										<a href="#"><img src="${url}/statics/img/product/1.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/1.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-i">
 										<div class="pro-title">
@@ -2121,7 +2185,8 @@
 								</div>
 								<div class="single-product  white-bg">
 									<div class="product-img pt-20">
-										<a href="#"><img src="${url}/statics/img/product/6.jpg" alt="" /> </a>
+										<a href="#"><img src="${url}/statics/img/product/6.jpg"
+											alt="" /> </a>
 									</div>
 									<div class="product-content product-i">
 										<div class="pro-title">
@@ -2161,15 +2226,17 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 								<div class="slider-single-img res">
-									<a href="#"> <img class="img_a" src="${url}/statics/img/banner/2.jpg"
-										alt="" /> <img class="img_b" src="${url}/statics/img/banner/2.jpg" alt="" />
+									<a href="#"> <img class="img_a"
+										src="${url}/statics/img/banner/2.jpg" alt="" /> <img
+										class="img_b" src="${url}/statics/img/banner/2.jpg" alt="" />
 									</a>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 								<div class="slider-single-img">
-									<a href="#"> <img class="img_a" src="${url}/statics/img/banner/3.jpg"
-										alt="" /> <img class="img_b" src="${url}/statics/img/banner/3.jpg" alt="" />
+									<a href="#"> <img class="img_a"
+										src="${url}/statics/img/banner/3.jpg" alt="" /> <img
+										class="img_b" src="${url}/statics/img/banner/3.jpg" alt="" />
 									</a>
 								</div>
 							</div>

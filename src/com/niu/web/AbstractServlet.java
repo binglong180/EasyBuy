@@ -11,14 +11,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
+
 import com.niu.bean.ProductCategory;
-import com.niu.service.productCategory.ProductCategoryServiceImpl;
+import com.niu.service.product.ProductCategoryServiceImpl;
 import com.niu.util.EmptyUtil;
 import com.niu.util.PrintUtil;
 import com.niu.util.ReturnResult;
 
 public abstract class AbstractServlet extends HttpServlet {
-
+	public Logger logger=Logger.getLogger(AbstractServlet.class);
 	public abstract Class getServletClass();
 
 	/**

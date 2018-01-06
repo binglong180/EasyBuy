@@ -5,7 +5,7 @@ import java.util.List;
 import com.niu.bean.ProductCategory;
 /**
  * 
- * 三级列表的包含类！
+ * 三级列表的包装类！
  * 
  * @author 牛牛牛！！！牛牛！！牛！
  *
@@ -14,17 +14,17 @@ import com.niu.bean.ProductCategory;
  * @version 
  *
  */
-public class ProductCategoryView {
+public class ProductCategoryBox {
 	private ProductCategory productCategory;
-	private List<ProductCategoryView> pcvList;
+	private List<ProductCategoryBox> pcvList;
 	
-	public ProductCategoryView(ProductCategory productCategory,
-			List<ProductCategoryView> pcvList) {
+	public ProductCategoryBox(ProductCategory productCategory,
+			List<ProductCategoryBox> pcvList) {
 		super();
 		this.productCategory = productCategory;
 		this.pcvList = pcvList;
 	}
-	public ProductCategoryView() {
+	public ProductCategoryBox() {
 		super();
 	}
 	public ProductCategory getProductCategory() {
@@ -33,10 +33,10 @@ public class ProductCategoryView {
 	public void setProductCategory(ProductCategory productCategory) {
 		this.productCategory = productCategory;
 	}
-	public List<ProductCategoryView> getPcvList() {
+	public List<ProductCategoryBox> getPcvList() {
 		return pcvList;
 	}
-	public void setPcvList(List<ProductCategoryView> pcvList) {
+	public void setPcvList(List<ProductCategoryBox> pcvList) {
 		this.pcvList = pcvList;
 	}
 	@Override

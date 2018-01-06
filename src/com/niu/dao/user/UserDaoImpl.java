@@ -1,6 +1,5 @@
 package com.niu.dao.user;
 
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
@@ -11,6 +10,7 @@ import com.niu.dao.BaseDaoImpl;
 
 public class UserDaoImpl extends BaseDaoImpl<User> implements UserDao {
 
+	private User user;
 	public UserDaoImpl(Connection conn) {
 		super(conn);
 		// TODO Auto-generated constructor stub
@@ -18,18 +18,16 @@ public class UserDaoImpl extends BaseDaoImpl<User> implements UserDao {
 
 	public User setTableByRs(ResultSet rs) throws SQLException {
 		if (rs != null) {
-			while (rs.next()) {
-				user = new User();
-				user.setId(rs.getInt("id"));
-				user.setLoginName(rs.getString("loginName"));
-				user.setUserName(rs.getString("userName"));
-				user.setPassword(rs.getString("password"));
-				user.setSex(rs.getInt("sex"));
-				user.setIdentityCode(rs.getString("identityCode"));
-				user.setEmail(rs.getString("email"));
-				user.setMobile(rs.getString("mobile"));
-				user.setType(rs.getInt("type"));
-			}
+			user = new User();
+			user.setId(rs.getInt("id"));
+			user.setLoginName(rs.getString("loginName"));
+			user.setUserName(rs.getString("userName"));
+			user.setPassword(rs.getString("password"));
+			user.setSex(rs.getInt("sex"));
+			user.setIdentityCode(rs.getString("identityCode"));
+			user.setEmail(rs.getString("email"));
+			user.setMobile(rs.getString("mobile"));
+			user.setType(rs.getInt("type"));
 		}
 		return user;
 	}
@@ -40,7 +38,9 @@ public class UserDaoImpl extends BaseDaoImpl<User> implements UserDao {
 				"SELECT id,loginName,userName,PASSWORD,sex,identityCode,email,mobile,TYPE "
 						+ "FROM easybuy_user " + "WHERE 1=1 AND loginName=?");
 		ResultSet rs = this.executeQuery(sql, loginName);
-		user = setTableByRs(rs);
+		while (rs.next()) {
+			user = setTableByRs(rs);
+		}
 		return user;
 	}
 

@@ -59,7 +59,8 @@
 <!-- responsive.css -->
 <link rel="stylesheet" href="${url}/statics/css/responsive.css">
 <!--Google Fonts-->
-
+<!--图片验证-->
+<link rel="stylesheet" type="text/css" href="${url}/statics/css/login/verify.css">
 </head>
 
 <body>
@@ -149,5 +150,14 @@
 		</div>
 	</div>
 	<!--  模态窗口结束-->
+	<!--弹出验证窗口*****************************************-->
+	<div id="fade2" class="black_overlay"></div>
+	<div id="mpanel5" class="white_content" style="width:601px;background: white;">
+		<div style="width:600px">
+			<img src="${url}/statics/img/close.gif"  style="padding:20px;cursor:pointer;"
+			onclick="CloseDiv_1('mpanel5','fade2')" />
+		</div>
+	</div>
+	<!--弹出验证窗口*****************************************-->
 </body>
 </html>

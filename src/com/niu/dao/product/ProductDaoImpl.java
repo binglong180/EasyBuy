@@ -17,75 +17,86 @@ public class ProductDaoImpl extends BaseDaoImpl<Product> implements ProductDao {
 		super(conn);
 		// TODO Auto-generated constructor stub
 	}
+
 	@Override
-	public List<Product> queryProductList(ProductParam param) throws SQLException {
+	public List<Product> queryProductList(ProductParam param)
+			throws SQLException {
 		List<Object> list = new ArrayList<Object>();// sql语句的参数列表
-		List<Product> ProductList=new ArrayList<Product>();// 商品列表
+		List<Product> ProductList = new ArrayList<Product>();// 商品列表
 		StringBuffer sql = new StringBuffer(
 				"SELECT id,`name`,description,price,stock,"
 						+ "categoryLevel1Id,categoryLevel2Id,categoryLevel3Id,fileName,isDelete "
 						+ "FROM easybuy_product WHERE 1=1");
 		// 根据名称查询精确
-		if (EmptyUtil.isEmpty(param.getName())) {
-			sql.append("and name like concat('%',?,'%')");
+		if (!EmptyUtil.isEmpty(param.getName())) {
+			sql.append(" and name=?");
 			list.add(param.getName());
 		}
 		// 模糊查询
-		if (EmptyUtil.isEmpty(param.getKeyword())) {
-			sql.append("and name like concat('%',?,'%')");
-			list.add(param.getKeyword());
+		if (!EmptyUtil.isEmpty(param.getKeyword())) {
+			sql.append(" and name like ?");
+			list.add("%"+param.getKeyword()+"%");
 		}
 		// 根据分类查询
-		if (EmptyUtil.isEmpty(param.getCategoryId())) {
-			sql.append("AND categoryLevel1Id=? OR categoryLevel2Id=? OR categoryLevel3Id =?");
+		if (!EmptyUtil.isEmpty(param.getCategoryId())) {
+			sql.append(" AND categoryLevel1Id=? OR categoryLevel2Id=? OR categoryLevel3Id =?");
 			list.add(param.getCategoryId());
 			list.add(param.getCategoryId());
 			list.add(param.getCategoryId());
 		}
-		//排序
-		if (EmptyUtil.isEmpty(param.getSort())) {
-			sql.append(" order by"+param.getSort());
+	/*	// 排序
+		if (!EmptyUtil.isEmpty(param.getSort())) {
+			sql.append(" order by" + param.getSort());
 		}
-		//是否分页
-		if (EmptyUtil.isEmpty(param.isPage())) {
-			sql.append(" limit by"+param.getStartIndex()+","+param.getPageSize());
-		}
+		// 是否分页
+		if (!EmptyUtil.isEmpty(param.isPage())) {
+			sql.append(" limit by" + param.getStartIndex() + ","
+					+ param.getPageSize());
+		}*/
 		rs = this.executeQuery(sql, list.toArray());
-		while(rs.next()){
-			ProductList.add(setTableByRs(rs));
+		if(!EmptyUtil.isEmpty(rs)){
+			while (rs.next()) {
+				ProductList.add(setTableByRs(rs));
+			}
 		}
 		return ProductList;
 	}
+
 	/**
 	 * 获得查询的总数
 	 */
 	@Override
 	public Integer queryProductCount(ProductParam param) throws SQLException {
-		Integer count=null;
+		Integer count = null;
 		List<Object> list = new ArrayList<Object>();// sql语句的参数列表
-		List<Product> ProductList=new ArrayList<Product>();// 商品列表
-		StringBuffer sql = new StringBuffer(
-				"SELECT COUNT(1) `count`"
-						+ "FROM easybuy_product WHERE 1=1");
+		StringBuffer sql = new StringBuffer("SELECT COUNT(1) "
+				+ "FROM easybuy_product WHERE 1=1");
 		// 根据名称查询精确
-		if (EmptyUtil.isEmpty(param.getName())) {
-			sql.append("and name like concat('%',?,'%')");
+		if (!EmptyUtil.isEmpty(param.getName())) {
+			sql.append(" and name=?");
 			list.add(param.getName());
 		}
 		// 模糊查询
-		if (EmptyUtil.isEmpty(param.getKeyword())) {
-			sql.append("and name like concat('%',?,'%')");
-			list.add(param.getKeyword());
+		if (!EmptyUtil.isEmpty(param.getKeyword())) {
+			sql.append(" and name like ?");
+			list.add("%"+param.getKeyword()+"%");
 		}
 		// 根据分类查询
-		if (EmptyUtil.isEmpty(param.getCategoryId())) {
-			sql.append("AND categoryLevel1Id=? OR categoryLevel2Id=? OR categoryLevel3Id =?");
+		if (!EmptyUtil.isEmpty(param.getCategoryId())) {
+			sql.append(" AND categoryLevel1Id=? OR categoryLevel2Id=? OR categoryLevel3Id =?");
 			list.add(param.getCategoryId());
 			list.add(param.getCategoryId());
 			list.add(param.getCategoryId());
 		}
 		rs = this.executeQuery(sql, list.toArray());
-		count=rs.getInt("count");
+		if (EmptyUtil.isEmpty(rs)) {
+			count = 0;
+		} else {
+			while(rs.next()){
+				
+				count = rs.getInt(1);
+			}
+		}
 		return count;
 	}
 

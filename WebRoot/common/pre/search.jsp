@@ -19,12 +19,6 @@
 
 <body>
 	<!-- ***************************************************************************** -->
-	<!-- 获取菜单列表 -->
-	<c:if test="${empty productCategoryViewList}">
-		<script>
-			location.href = "${url}/Home?action=index";
-		</script>
-	</c:if>
 	<!-- ***************************************************************************** -->
 	<!-- header-bottom-area-start -->
 	<div class="header-bottom-area bg-color-1 ptb-25">
@@ -32,7 +26,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 					<div class="logo">
-						<a href="index.jsp"><img src="${url}/statics/img/logo.png"
+						<a href="${url}/pre/index.jsp"><img src="${url}/statics/img/logo.png"
 							alt="" /> </a>
 					</div>
 				</div>
@@ -45,12 +39,13 @@
 							</span>
 						</div>
 						<div class="search-box">
-							<form action="#">
+							<form action="${url}/Product">
 								<select name="#" id="select">
 									<option value="">所有商品分类</option>
 									<option value="40">Accessories</option>
 									<option value="41">Clothing</option>
-								</select> <input type="text" placeholder="电脑">
+								</select> <input type="text" placeholder="电脑" name="keyWord"> 
+								<input type="hidden" name="action" value="ProductList">
 								<button>
 									<i class="fa fa-search"></i>
 								</button>
@@ -85,8 +80,7 @@
 												</div>
 												<div class="pro-action">
 													<a class="btn-remove" href="#">删除</a>
-												</div>
-											</li>
+												</div></li>
 											<!-- single item -->
 											<!-- single item -->
 											<li><a class="product-image" href="product-details.html">
@@ -99,8 +93,7 @@
 												</div>
 												<div class="pro-action">
 													<a class="btn-remove" href="#">删除</a>
-												</div>
-											</li>
+												</div></li>
 											<!-- single item -->
 
 										</ol>
@@ -122,137 +115,7 @@
 		</div>
 	</div>
 	<!-- header-bottom-area-end -->
-	<!-- header -->
-	<!-- 三级菜单展示 -->
-	<div class="mainmenu-area bg-color-2 hidden-xs hidden-sm">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-3">
-					<div class="mainmenu-left visible-lg  visible-md">
-						<div class="product-menu-title">
-							<h2>
-								所有商品分类 <i class="fa fa-arrow-circle-down"></i>
-							</h2>
-						</div>
-						<div class="product_vmegamenu">
-							<ul>
-								<c:forEach var="productCategory"
-									items="${productCategoryViewList}" varStatus="imgIndex">
-									<li><a href="#" class="hover-icon"><img
-											src="${url}/statics/img/menu-l/${imgIndex.index+1}.png"
-											alt="" />${productCategory.productCategory.name}</a> 
-											<!-- 二级菜单 -->
-										<c:if test="${!empty productCategory.pcvList}">
-											<div class="vmegamenu">
-												<c:forEach var="productCategory2"
-													items="${productCategory.pcvList}">
-													<!-- 三级菜单 -->
-													<c:if test="${!empty productCategory2.pcvList}">
-														<span> <a href="#" class="vgema-title">${productCategory2.productCategory.name}</a>
-															<c:forEach var="productCategory3"
-																items="${productCategory2.pcvList}">
-																<a href="#">${productCategory3.productCategory.name}</a>
-															</c:forEach> </span>
-													</c:if>
-												</c:forEach>
-											</div>
-										</c:if></li>
-								</c:forEach>
-								<li><a href="#" class="hover-icon"><img
-										src="${url}/statics/img/menu-l/12.png" alt="" />Sports &
-										Outdoors</a>
-									<div class="vmegamenu">
-										<span> <a href="#" class="vgema-title">Electronic</a> <a
-											href="#">Bedroom</a> <a href="#">Kitchen</a> <a href="#">Living
-												room</a> <a href="#">Out door</a> </span> <span> <a href="#"
-											class="vgema-title">Lights</a> <a href="#">All lights</a> <a
-											href="#">Bed room</a> <a href="#">Living room</a> <a href="#">Out
-												door</a> </span> <span> <a href="#" class="vgema-title">Television</a>
-											<a href="#">Samsung</a> <a href="#">Samsung Oled</a> <a
-											href="#">Sony</a> <a href="#">Sony Bravia</a> </span> <span>
-											<a href="#" class="vgema-title">Washing</a> <a href="#">Commercial</a>
-											<a href="#">Front-Load </a> <a href="#">Pedestal </a> <a
-											href="#">Top-Load </a> </span>
-									</div>
-								</li>
-								<li><a href="#" class="hover-icon"><img
-										src="${url}/statics/img/menu-l/7.png" alt="" />Smartphone &
-										Tablets</a>
-									<div class="vmegamenu vmegamenu2">
-										<span> <a href="#" class="vgema-title">HandBags</a> <a
-											href="#">Kids</a> <a href="#">Mens</a> <a href="#">Student</a>
-											<a href="#">Women</a> </span> <span> <a href="#"
-											class="vgema-title">Clothing</a> <a href="#">Children</a> <a
-											href="#">Kids</a> <a href="#">Mens</a> <a href="#">Womens</a>
-										</span>
-									</div>
-								</li>
-								<li><a href="#"><img
-										src="${url}/statics/img/menu-l/8.png" alt="" />Health &
-										Beauty</a></li>
-								<li><a href="#"><img
-										src="${url}/statics/img/menu-l/9.png" alt="" />Toys & Hobbies</a>
-								</li>
-								<li><a href="#"><img
-										src="${url}/statics/img/menu-l/10.png" alt="" />Holiday
-										Supplies & Gifts</a>
-								</li>
-								<li><a href="#"><img
-										src="${url}/statics/img/menu-l/11.png" alt="" />Jewelry &
-										Watches</a>
-								</li>
-								<li><a href="#"><img
-										src="${url}/statics/img/menu-l/5.png" alt="" />Smartphone &
-										Watches</a>
-								</li>
 
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-9 col-md-9">
-					<div class="mainmenu">
-						<nav>
-						<ul>
-							<li><a href="index.jsp">首页</a></li>
-							<c:if test="${!empty productCategoryViewList}">
-								<c:forEach var="productCategory"
-									items="${productCategoryViewList}">
-									<li><a href="index.jsp">${productCategory.productCategory.name}</a>
-									</li>
-								</c:forEach>
-							</c:if>
-							<li><a href="contact-us.jsp">联系我们</a></li>
-						</ul>
-						</nav>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- mobile-menu-start -->
-	<div class="mobile-menu-area hidden-md hidden-lg">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="mobile-menu">
-						<nav id="mobile-menu">
-						<ul>
-							<li></li>
-							<c:if test="${!empty productCategoryList}">
-								<c:forEach var="productCategory" items="${productCategoryList}">
-									<li><a href="index.jsp">${productCategory.name}</a></li>
-								</c:forEach>
-							</c:if>
-							<li><a href="${loginUrl }">${userName}</a></li>
-						</ul>
-						</nav>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- mobile-menu-end -->
 	<!-- mainmenu-area-end -->
 </body>
 </html>

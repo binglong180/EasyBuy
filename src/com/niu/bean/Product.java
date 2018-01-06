@@ -10,7 +10,7 @@ public class Product {
 	private Integer categoryLevel1Id;// 分类1
 	private Integer categoryLevel2Id;// 分类2
 	private Integer categoryLevel3Id;// 分类3
-	private String fileName;// 文件名称
+	private String fileName;// 图片文件名称
 	private Integer isDelete;// 是否删除(1：删除 0：未删除)
 	public Product(Integer id, String name, String description, Float price,
 			Integer stock, Integer categoryLevel1Id, Integer categoryLevel2Id,

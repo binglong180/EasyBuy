@@ -1,23 +1,13 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<%@ include file="../common/pre/header.jsp" %>
-<html>
+<%@ include file="../common/pre/header.jsp"%>
+<html class="no-js" lang="en">
 <head>
-
-<title>登录页面</title>
-<!-- Custom Theme files -->
-
-<!-- Custom Theme files -->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords"
-	content="Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<!-- 登录页面样式 -->
-<link href="${url}/statics/css/login/style.css" rel="stylesheet" type="text/css"
-	media="all" />
-<!--Google Fonts-->
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Login</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<%
@@ -37,30 +27,62 @@
 			}
 		}
 	%>
-	<div class="login" style="margin-bottom:150px">
-		<div class="login-top">
-			<h1>登 录</h1>
-			<form  method="post">
-				<input type="text" value="loginName" name="loginName" id="loginName"
-					onfocus="this.value = '';"
-					onblur="if (this.value == '') {this.value = 'loginName';}">
-				<input type="password" value="password" name="password" id="password"
-					onfocus="this.value = '';"
-					onblur="if (this.value == '') {this.value = 'password';}">
-				<div class="forgot">
-					<a href="#">忘记密码</a> <input type="button" value="登录" onclick="login()">
+
+
+	<!-- account area start -->
+	<div class="account-area pt-30 log">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-lg-6 col-sm-6 col-md-offset-3"
+					style="margin-bottom:100px;margin-top:100px">
+					<div class="account-info pb-30">
+						<form method="post" id="LoginForm">
+							<div class="form-fields">
+								<h2>登录</h2>
+								<p>
+									<label>登录名<span class="required">*</span> </label> <input
+										type="text" value="" name="loginName" id="loginName"
+										onfocus="this.value = '';"
+										onblur="if (this.value == '') {this.value = '';}">
+								</p>
+								<p>
+									<label>密码<span class="required">*</span> </label> <input
+										type="password" value="" name="password" id="password"
+										onfocus="this.value = '';"
+										onblur="if (this.value == '') {this.value = '';}">
+								</p>
+								<div id="slider2" class="slider"
+									style="margin-top:5px;margin-bottom:10px;"></div>
+								<input type="hidden" name="action" value="login" />
+							</div>
+							<div class="form-action">
+								<label> <a href="#" class="lost_password">忘记密码</a> <input
+									type="checkbox"
+									style="width:18px;height:18px;margin-left:200px"> 记住密码
+								</label><input value="登录" type="button" id="loginSubmit">
+							</div>
+						</form>
+					</div>
 				</div>
-				<input type="hidden" name="action" value="login" />
+			</div>
 		</div>
-		<div class="login-bottom">
-			<h3>
-				新用户 &nbsp;<a href="${url}/pre/register.jsp">注册</a>
-			</h3>
-		</div>
-		</form>
 	</div>
-	</div>
-	<%@include file="../common/pre/footer.jsp" %>
+	<!-- account area end -->
 
 </body>
+<%@include file="../common/pre/footer.jsp"%>
+
+<script type="text/javascript">
+	
+</script>
 </html>
+
+
+
+
+
+
+
+
+
+

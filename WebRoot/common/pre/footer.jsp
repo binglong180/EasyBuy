@@ -20,9 +20,9 @@
 </head>
 
 <body>
-	
-	
-	
+
+
+
 	<footer> <!-- footer-top-area -->
 	<div class="footer-top-area border-1 ptb-30 bg-color-3">
 		<div class="container">
@@ -104,22 +104,28 @@
 					<div class="footer-widget">
 						<div class="footer-widget-img">
 							<div class="single-img">
-								<a href="#"><img src="${url}/statics/img/footer/1.jpg" alt="" /> </a>
+								<a href="#"><img src="${url}/statics/img/footer/1.jpg"
+									alt="" /> </a>
 							</div>
 							<div class="single-img">
-								<a href="#"><img src="${url}/statics/img/footer/2.jpg" alt="" /> </a>
+								<a href="#"><img src="${url}/statics/img/footer/2.jpg"
+									alt="" /> </a>
 							</div>
 							<div class="single-img">
-								<a href="#"><img src="${url}/statics/img/footer/3.jpg" alt="" /> </a>
+								<a href="#"><img src="${url}/statics/img/footer/3.jpg"
+									alt="" /> </a>
 							</div>
 							<div class="single-img">
-								<a href="#"><img src="${url}/statics/img/footer/4.jpg" alt="" /> </a>
+								<a href="#"><img src="${url}/statics/img/footer/4.jpg"
+									alt="" /> </a>
 							</div>
 							<div class="single-img">
-								<a href="#"><img src="${url}/statics/img/footer/5.jpg" alt="" /> </a>
+								<a href="#"><img src="${url}/statics/img/footer/5.jpg"
+									alt="" /> </a>
 							</div>
 							<div class="single-img">
-								<a href="#"><img src="${url}/statics/img/footer/6.jpg" alt="" /> </a>
+								<a href="#"><img src="${url}/statics/img/footer/6.jpg"
+									alt="" /> </a>
 							</div>
 						</div>
 					</div>
@@ -135,14 +141,13 @@
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 						<div class="copyright text-left" style="padding:0px">
-							<p>
-								Copyright &copy; 2017.Company name All rights reserved.
-							</p>
+							<p>Copyright &copy; 2017.Company name All rights reserved.</p>
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 						<div class="payment text-right">
-							<a href="#"><img src="${url}/statics/img/payment.png" alt="" /> </a>
+							<a href="#"><img src="${url}/statics/img/payment.png" alt="" />
+							</a>
 						</div>
 					</div>
 				</div>
@@ -164,27 +169,31 @@
 	<!-- social_block-end -->
 </body>
 <!-- all js here -->
-<script src="${url}/statics/js/vendor/modernizr-2.8.3.min.js"></script>
+<script type="text/javascript" src="${url}/statics/js/vendor/modernizr-2.8.3.min.js"></script>
 <!-- jquery-1.12.0 -->
-<script src="${url}/statics/js/vendor/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="${url}/statics/js/vendor/jquery-1.12.4.js"></script>
+<!-- jquery.min.js -->
+<script type="text/javascript" src="${url}/statics/js/jquery.min.js"></script>
 <!-- bootstrap.min.js -->
-<script src="${url}/statics/js/bootstrap.min.js"></script>
+<%-- <script src="${url}/statics/js/jquery-1.11.1.min_044d0927.js"></script> --%>
+<!-- bootstrap.min.js -->
+<script type="text/javascript" src="${url}/statics/js/bootstrap.min.js"></script>
 <!-- nivo.slider.js -->
-<script src="${url}/statics/js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="${url}/statics/js/jquery.nivo.slider.pack.js"></script>
 <!-- jquery-ui.min.js -->
-<script src="${url}/statics/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="${url}/statics/js/jquery-ui.min.js"></script>
 <!-- jquery.magnific-popup.min.js -->
-<script src="${url}/statics/js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="${url}/statics/js/jquery.magnific-popup.min.js"></script>
 <!-- jquery.meanmenu.min.js -->
-<script src="${url}/statics/js/jquery.meanmenu.js"></script>
+<script type="text/javascript" src="${url}/statics/js/jquery.meanmenu.js"></script>
 <!-- jquery.scrollup.min.js-->
-<script src="${url}/statics/js/jquery.scrollup.min.js"></script>
+<script type="text/javascript" src="${url}/statics/js/jquery.scrollup.min.js"></script>
 <!-- owl.carousel.min.js -->
-<script src="${url}/statics/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="${url}/statics/js/owl.carousel.min.js"></script>
 <!-- plugins.js -->
-<script src="${url}/statics/js/plugins.js"></script>
+<script type="text/javascript" src="${url}/statics/js/plugins.js"></script>
 <!-- main.js -->
-<script src="${url}/statics/js/main.js"></script>
+<script type="text/javascript" src="${url}/statics/js/main.js"></script>
 <!-- Google Map js -->
 <!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
 <!-- <script>
@@ -206,14 +215,15 @@
 			google.maps.event.addDomListener(window, 'load', initialize);
 		</script>		 -->
 <!--  表单验证的包-->
-<script src="${url}/statics/js/jquery.validate.js"></script>
-<!--  register.js 编写验证-->
-<script type="text/javascript"
-	src="${url}/statics/js/register/register.js"></script>
+<script type="text/javascript" src="${url}/statics/js/jquery.validate.js"></script>
 <!-- 控制模态窗口 -->
 <script type="text/javascript" src="${url}/statics/js/shade.js"></script>
-<!-- 登录控制 -->
-<script type="text/javascript" src="${url}/statics/js/login/login.js"></script>
 <!-- MD5加密-->
 <script type="text/javascript" src="${url}/statics/js/md5/md5.js"></script>
+<!-- 登录控制 -->
+<script type="text/javascript" src="${url}/statics/js/login/login.js"></script>
+<!-- 验证包 -->
+<script type="text/javascript" src="${url}/statics/js/login/verify.js" ></script>
+<!--  register.js 编写验证-->
+<script type="text/javascript" src="${url}/statics/js/register/register.js"></script>
 </html>

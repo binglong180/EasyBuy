@@ -8,12 +8,12 @@ import java.util.List;
 import com.mysql.jdbc.Connection;
 import com.niu.bean.ProductCategory;
 import com.niu.dao.BaseDaoImpl;
-import com.niu.util.ProductCategoryView;
+import com.niu.util.ProductCategoryBox;
 
 public class ProductCategoryDaoImpl extends BaseDaoImpl<ProductCategory>
 		implements ProductCategoryDao {
 	List<ProductCategory> ProductCategoryList = new ArrayList<ProductCategory>();
-
+	private ProductCategory productCategory;
 	public ProductCategoryDaoImpl(Connection conn) {
 		super(conn);
 	}
@@ -31,11 +31,11 @@ public class ProductCategoryDaoImpl extends BaseDaoImpl<ProductCategory>
 	}
 
 	@Override
-	public List<ProductCategoryView> getAllProductCategory()
+	public List<ProductCategoryBox> getAllProductCategory()
 			throws SQLException {
 		return null;
 	}
-
+	
 	public ProductCategory setTableByRs(ResultSet rs) throws SQLException {
 		if (rs != null) {
 			productCategory = new ProductCategory();
