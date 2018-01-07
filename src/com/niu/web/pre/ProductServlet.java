@@ -55,27 +55,26 @@ public class ProductServlet extends AbstractServlet {
 		List<Product> productList = new ArrayList<Product>();
 		List<ProductCategoryBox> productCategoryList=new ArrayList<ProductCategoryBox>();
 		ProductParam param = new ProductParam();
-		String keyWord = request.getParameter("keyWord");
-		String categoryIdStr = request.getParameter("categoryId");
-		String pageSizeStr = request.getParameter("pageSize");
-		String startIndexStr = request.getParameter("startIndex");
+		String keyWord = request.getParameter("keyWord");//搜索关键词
+		String categoryIdStr = request.getParameter("categoryId");//分类Id
+		String pageSizeStr = request.getParameter("pageSize");//页面容量
+		String currentPageStr = request.getParameter("currentPage");
 		// 分页信息
-		Integer startIndex = EmptyUtil.isEmptys(startIndexStr) ? 1 : Integer
-				.parseInt(startIndexStr);
-		Integer pageSize = EmptyUtil.isEmptys(pageSizeStr) ? 12 : Integer
+		Integer currentPage = EmptyUtil.isEmptys(currentPageStr) ? 1 : Integer
+				.parseInt(currentPageStr);
+		Integer pageSize = EmptyUtil.isEmptys(pageSizeStr) ? 6 : Integer
 				.parseInt(pageSizeStr);
-		
-
-		Integer categoryId = EmptyUtil.isEmpty(categoryIdStr) ? null : Integer
+		Integer categoryId = EmptyUtil.isEmpty(categoryIdStr) ? 0: Integer
 				.parseInt(categoryIdStr);
+		Integer startIndex=((currentPage-1)*pageSize);
 		param.openPage(startIndex, pageSize);
 		param.setKeyword(keyWord);
 		param.setCategoryId(categoryId);
 		Integer total = ps.queryProductCount(param);
 		// 分页
+		
 		Pager pager = new Pager(total, pageSize, startIndex);
 		pager.setUrl("Product?action=ProductList&categoryId=" + categoryId);
-		
 		productList = ps.queryProductList(param);
 		productCategoryList=pcs.getAllProductCategory();//分类信息
 		request.setAttribute("pager", pager);

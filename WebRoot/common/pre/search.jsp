@@ -44,7 +44,7 @@
 									<option value="">所有商品分类</option>
 									<option value="40">Accessories</option>
 									<option value="41">Clothing</option>
-								</select> <input type="text" placeholder="电脑" name="keyWord"> 
+								</select> <input type="text"  name="keyWord" value="${requestScope.keyWord}"> 
 								<input type="hidden" name="action" value="ProductList">
 								<button>
 									<i class="fa fa-search"></i>

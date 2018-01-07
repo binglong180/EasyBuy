@@ -38,21 +38,21 @@ public class ProductDaoImpl extends BaseDaoImpl<Product> implements ProductDao {
 			list.add("%"+param.getKeyword()+"%");
 		}
 		// 根据分类查询
-		if (!EmptyUtil.isEmpty(param.getCategoryId())) {
+		if (param.getCategoryId()!=0) {
 			sql.append(" AND categoryLevel1Id=? OR categoryLevel2Id=? OR categoryLevel3Id =?");
 			list.add(param.getCategoryId());
 			list.add(param.getCategoryId());
 			list.add(param.getCategoryId());
 		}
-	/*	// 排序
+		// 排序
 		if (!EmptyUtil.isEmpty(param.getSort())) {
-			sql.append(" order by" + param.getSort());
+			sql.append(" order by " + param.getSort());
 		}
 		// 是否分页
 		if (!EmptyUtil.isEmpty(param.isPage())) {
-			sql.append(" limit by" + param.getStartIndex() + ","
+			sql.append(" limit  " + param.getStartIndex() + ","
 					+ param.getPageSize());
-		}*/
+		}
 		rs = this.executeQuery(sql, list.toArray());
 		if(!EmptyUtil.isEmpty(rs)){
 			while (rs.next()) {
@@ -82,7 +82,7 @@ public class ProductDaoImpl extends BaseDaoImpl<Product> implements ProductDao {
 			list.add("%"+param.getKeyword()+"%");
 		}
 		// 根据分类查询
-		if (!EmptyUtil.isEmpty(param.getCategoryId())) {
+		if (param.getCategoryId()!=0) {
 			sql.append(" AND categoryLevel1Id=? OR categoryLevel2Id=? OR categoryLevel3Id =?");
 			list.add(param.getCategoryId());
 			list.add(param.getCategoryId());

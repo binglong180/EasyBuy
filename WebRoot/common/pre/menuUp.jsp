@@ -31,7 +31,7 @@
 						</div>
 						<div class="product_vmegamenu">
 							<ul>
-								<ul>
+								
 									<c:forEach var="productCategory"
 										items="${productCategoryViewList}" varStatus="imgIndex">
 										<!--一级分类  -->

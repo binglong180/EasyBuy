@@ -11,7 +11,7 @@
 	language governing permissions and limitations under the License. -->
 <!-- The contents of this file will be loaded for each web application -->
 <Context>
-
+	<Loader delegate="true" />
 	<!-- Default set of monitored resources -->
 	<WatchedResource>WEB-INF/web.xml</WatchedResource>
 
