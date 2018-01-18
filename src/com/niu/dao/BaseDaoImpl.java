@@ -16,30 +16,48 @@ public abstract class BaseDaoImpl<T> implements BaseDao<T> {
 		this.conn = conn;
 	}
 
-	public PreparedStatement update(StringBuffer sql, Object... prama) {
+	public Integer update(StringBuffer sql, Object... prama) {
+		int executeUpdate = -1;
 		try {
 			ps = conn.prepareStatement(sql.toString());
 			for (int i = 0; i < prama.length; i++) {
 				ps.setObject((i + 1), prama[i]);
 			}
+			executeUpdate = ps.executeUpdate();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return ps;
+		return executeUpdate;
 	}
 
-	public PreparedStatement insert(StringBuffer sql, Object... prama)
+	/*
+	 * 新增并获得ResultSet
+	 */
+	public ResultSet insert(StringBuffer sql, Object... prama)
 			throws SQLException {
 		ps = conn.prepareStatement(sql.toString(),
 				Statement.RETURN_GENERATED_KEYS);
 		for (int i = 0; i < prama.length; i++) {
 			ps.setObject((i + 1), prama[i]);
 		}
-		return ps;
-
+		ps.executeUpdate();
+		ResultSet rs = ps.getGeneratedKeys();
+		return rs;
 	}
 
+	/**
+	 * 
+	 * 查询！
+	 * 
+	 * @author 牛牛
+	 * 
+	 * @date 2018-1-12
+	 * 
+	 * @param sql
+	 * @param prama
+	 * @return
+	 */
 	public ResultSet executeQuery(StringBuffer sql, Object... prama) {
 		try {
 			ps = conn.prepareStatement(sql.toString());
@@ -53,6 +71,4 @@ public abstract class BaseDaoImpl<T> implements BaseDao<T> {
 		}
 		return rs;
 	}
-
-	public abstract T setTableByRs(ResultSet rs) throws SQLException;
 }

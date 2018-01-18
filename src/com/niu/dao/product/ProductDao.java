@@ -49,4 +49,19 @@ public interface ProductDao extends BaseDao<Product> {
 	 * @throws SQLException
 	 */
 	Product queryProductById(String id) throws SQLException;
+
+	/**
+	 * 
+	 * 修改库存
+	 * 
+	 * @author 牛牛
+	 * 
+	 * @date 2018-1-8
+	 * 
+	 * @param id
+	 * @return
+	 * @throws SQLException
+	 */
+	Integer updateStockByid(String id, Integer stock) throws SQLException;
+
 }

@@ -121,8 +121,19 @@ public class ProductServlet extends AbstractServlet {
 		return "/pre/product/ShowProductList";
 	}
 
+	public String showProductDetail(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		List<ProductCategoryBox> productCategoryList = new ArrayList<ProductCategoryBox>();
+		productCategoryList = pcs.getAllProductCategory();// 分类信息
+		request.setAttribute("productCategoryViewList", productCategoryList);
+		String productId = request.getParameter("productId");
+		Product product = ps.queryProductById(productId);
+		request.setAttribute("product", product);
+		return "/pre/product/ProductDetail";
+	}
+
 	@Override
-	public Class<ProductServlet> getServletClass() {
+	public Class getServletClass() {
 		// 返回class
 		return ProductServlet.class;
 	}

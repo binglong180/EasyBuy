@@ -1,9 +1,9 @@
 <%@page import="javax.faces.application.Application"%>
 <%@page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-<head>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page import="com.niu.bean.*"%>
+<%@ page import="com.niu.util.*"%>
+
 <!-- ***************************************************************** -->
 <!-- 基础路径的配置 -->
 <c:set var="url" value="${pageContext.request.contextPath}"></c:set>
@@ -27,43 +27,7 @@
 	</c:otherwise>
 </c:choose>
 <!-- ****************************************************************** -->
-<title>My JSP 'header.jsp' starting page</title>
 
-<meta http-equiv="pragma" content="no-cache">
-<meta http-equiv="cache-control" content="no-cache">
-<meta http-equiv="expires" content="0">
-<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-<meta http-equiv="description" content="This is my page">
-<!--
-	<link rel="stylesheet" type="textcss" href="styles.css">
-	-->
-<!-- all css here -->
-<!-- 验证样式 -->
-<link rel="stylesheet" href="${url}/statics/css/myCss/register.css">
-<link rel="icon" href="${url}/statics/img/favicon.png" />
-<!-- bootstrap.min.css -->
-<link rel="stylesheet" href="${url}/statics/css/bootstrap.min.css">
-<!-- font-awesome.min.css -->
-<link rel="stylesheet" href="${url}/statics/css/font-awesome.min.css">
-<!-- owl.carousel.css -->
-<link rel="stylesheet" href="${url}/statics/css/owl.carousel.css">
-<!-- owl.carousel.css -->
-<link rel="stylesheet" href="${url}/statics/css/meanmenu.min.css">
-<!-- shortcode/shortcodes.css -->
-<link rel="stylesheet"
-	href="${url}/statics/css/shortcode/shortcodes.css">
-<!-- nivo-slider.css -->
-<link rel="stylesheet" href="${url}/statics/css/nivo-slider.css">
-<!-- style.css -->
-<link rel="stylesheet" href="${url}/statics/style.css">
-<!-- responsive.css -->
-<link rel="stylesheet" href="${url}/statics/css/responsive.css">
-<!--Google Fonts-->
-<!--图片验证-->
-<link rel="stylesheet" type="text/css" href="${url}/statics/css/login/verify.css">
-</head>
-
-<body>
 
 	<!-- header-top-area-start -->
 	<div class="header-top-area black-bg ptb-7 hidden-xs">
@@ -87,26 +51,24 @@
 									</ul>
 								</li>
 							</ul>
-							<ul><li><a href="${url}/Login?action=toLogin"><i class="fa fa-check"></i> 结算</a></li></ul>
 						</c:if>
 						<c:if test="${!empty user}">
 							<!-- 已登录 -->
 							<ul>
-								<li><a> <i class="fa fa-user"></i> ${userName} </a>
+								<li><a href="${url}/BackendUser?action=userInfo"> <i class="fa fa-user"></i> ${userName} </a>
 								</li>
 							</ul>
 							<ul>
 								<li><a href="${LogOutUrl}">${LogOutName}</a></li>
 							</ul>
-							<ul><li><a href="${url}/Login?action=toLogin"><i class="fa fa-check"></i> 结算</a></li></ul>
+							<ul>
+								<li><a href="javascript:toCheckOut()"><i
+										class="fa fa-check"></i> 结算</a></li>
+							</ul>
 						</c:if>
 
-						
-					
-						
-						
-							
-						
+
+
 						<ul>
 							<li class="slide-toggle-2 text-uppercase"><a href="#"><i
 									class="fa fa-usd"></i>USD</a>
@@ -118,7 +80,8 @@
 							</li>
 						</ul>
 						<ul>
-							<li class="slide-toggle-3 text-uppercase"><a href="${url}/Home?action=index"> 首页</a>
+							<li class="slide-toggle-3 text-uppercase"><a
+								href="${url}/Home?action=index"> 首页</a>
 							</li>
 						</ul>
 					</div>
@@ -126,6 +89,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<!-- header-top-area-end -->
 	<!--  模态窗口-->
 	<div id="fade1" class="black_overlay"></div>
@@ -152,12 +116,12 @@
 	<!--  模态窗口结束-->
 	<!--弹出验证窗口*****************************************-->
 	<div id="fade2" class="black_overlay"></div>
-	<div id="mpanel5" class="white_content" style="width:601px;background: white;">
+	<div id="mpanel5" class="white_content"
+		style="width:601px;background: white;">
 		<div style="width:600px">
-			<img src="${url}/statics/img/close.gif"  style="padding:20px;cursor:pointer;"
-			onclick="CloseDiv_1('mpanel5','fade2')" />
+			<img src="${url}/statics/img/close.gif"
+				style="padding:20px;cursor:pointer;"
+				onclick="CloseDiv_1('mpanel5','fade2')" />
 		</div>
 	</div>
 	<!--弹出验证窗口*****************************************-->
-</body>
-</html>

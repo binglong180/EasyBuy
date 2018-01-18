@@ -1,7 +1,6 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!-- 头部导入 -->
-<%@include file="../common/pre/header.jsp"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
@@ -19,6 +18,15 @@
 	-->
 </head>
 <body>
+	<div id="MyLink">
+		<%@include file="../../common/pre/Link.jsp"%>
+	</div>
+	<div id="MyHeader">
+		<%@include file="../../common/pre/header.jsp"%>
+	</div>
+	<div id="MySearch">
+		<%@include file="../../common/pre/search.jsp"%>
+	</div>
 	<div class="breadcrumb-area">
 		<div class="container">
 			<ol class="breadcrumb">

@@ -230,5 +230,6 @@
 <script type="text/javascript" src="${url}/statics/js/cart/cart.js"></script>
 <!-- 刷新商品列表 -->
 <script type="text/javascript" src="${url}/statics/js/product/product.js"></script>
-
+<!-- 商品收藏 -->
+<script type="text/javascript" src="${url}/statics/js/fav/fav.js"></script>
 </html>

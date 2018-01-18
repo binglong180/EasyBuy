@@ -20,8 +20,13 @@
 
 </head>
 <body>
-	<%@include file="../../common/pre/header.jsp"%>
-	<div id="secrch">
+	<div id="MyLink">
+		<%@include file="../../common/pre/Link.jsp"%>
+	</div>
+	<div id="MyHeader">
+		<%@include file="../../common/pre/header.jsp"%>
+	</div>
+	<div id="MySearch">
 		<%@include file="../../common/pre/search.jsp"%>
 	</div>
 	<%@include file="../../common/pre/menuUp.jsp"%>
@@ -38,8 +43,7 @@
 		<div class="container">
 			<ol class="breadcrumb">
 				<li><a href="${url}/pre/index.jsp"><i class="fa fa-home"></i>
-						首页</a>
-				</li>
+						首页</a></li>
 				<li class="active">商城</li>
 			</ol>
 		</div>
@@ -58,21 +62,25 @@
 						<div class="sidebar-widget">
 							<h3 class="sidebar-title">Availability</h3>
 							<ul class="sidebar-menu">
-								<li><a href="#">In stock <span>(13)</span> </a></li>
-								<li><a href="#">In stock <span>(13)</span> </a></li>
+								<li><a href="#">In stock <span>(13)</span> </a>
+								</li>
+								<li><a href="#">In stock <span>(13)</span> </a>
+								</li>
 							</ul>
 						</div>
 						<div class="sidebar-widget">
 							<h3 class="sidebar-title">Condition</h3>
 							<ul class="sidebar-menu">
-								<li><a href="#">New <span>(11)</span> </a></li>
+								<li><a href="#">New <span>(11)</span> </a>
+								</li>
 							</ul>
 						</div>
 						<div class="sidebar-widget">
 							<h3 class="sidebar-title">Manufacturer</h3>
 							<ul class="sidebar-menu">
 								<li><a href="#"> Fashion Manufacturer <span>(13)</span>
-								</a></li>
+								</a>
+								</li>
 							</ul>
 						</div>
 						<div class="sidebar-widget">
@@ -89,48 +97,70 @@
 						<div class="sidebar-widget">
 							<h3 class="sidebar-title">Size</h3>
 							<ul class="sidebar-menu">
-								<li><a href="#"> S <span>(13)</span> </a></li>
-								<li><a href="#"> M <span>(15)</span> </a></li>
-								<li><a href="#"> L <span>(6)</span> </a></li>
+								<li><a href="#"> S <span>(13)</span> </a>
+								</li>
+								<li><a href="#"> M <span>(15)</span> </a>
+								</li>
+								<li><a href="#"> L <span>(6)</span> </a>
+								</li>
 							</ul>
 						</div>
 						<div class="sidebar-widget">
 							<h3 class="sidebar-title">Size</h3>
 							<ul class="sidebar-menu">
-								<li><a href="#"> Beige <span>(2)</span> </a></li>
-								<li><a href="#"> White <span>(4)</span> </a></li>
-								<li><a href="#"> Black <span>(4)</span> </a></li>
-								<li><a href="#"> Orange <span>(6)</span> </a></li>
-								<li><a href="#"> Blue <span>(4)</span> </a></li>
-								<li><a href="#"> Green <span>(1)</span> </a></li>
-								<li><a href="#"> Yellow <span>(5)</span> </a></li>
-								<li><a href="#"> Pink <span>(2)</span> </a></li>
+								<li><a href="#"> Beige <span>(2)</span> </a>
+								</li>
+								<li><a href="#"> White <span>(4)</span> </a>
+								</li>
+								<li><a href="#"> Black <span>(4)</span> </a>
+								</li>
+								<li><a href="#"> Orange <span>(6)</span> </a>
+								</li>
+								<li><a href="#"> Blue <span>(4)</span> </a>
+								</li>
+								<li><a href="#"> Green <span>(1)</span> </a>
+								</li>
+								<li><a href="#"> Yellow <span>(5)</span> </a>
+								</li>
+								<li><a href="#"> Pink <span>(2)</span> </a>
+								</li>
 							</ul>
 						</div>
 						<div class="sidebar-widget">
 							<h3 class="sidebar-title">Compositions</h3>
 							<ul class="sidebar-menu">
-								<li><a href="#"> Cotton <span>(2)</span> </a></li>
-								<li><a href="#"> Polyester <span>(4)</span> </a></li>
-								<li><a href="#"> Viscose <span>(4)</span> </a></li>
+								<li><a href="#"> Cotton <span>(2)</span> </a>
+								</li>
+								<li><a href="#"> Polyester <span>(4)</span> </a>
+								</li>
+								<li><a href="#"> Viscose <span>(4)</span> </a>
+								</li>
 							</ul>
 						</div>
 						<div class="sidebar-widget">
 							<h3 class="sidebar-title">Styles</h3>
 							<ul class="sidebar-menu">
-								<li><a href="#"> Casual <span>(2)</span> </a></li>
-								<li><a href="#"> Dressy <span>(4)</span> </a></li>
-								<li><a href="#"> Girly <span>(4)</span> </a></li>
+								<li><a href="#"> Casual <span>(2)</span> </a>
+								</li>
+								<li><a href="#"> Dressy <span>(4)</span> </a>
+								</li>
+								<li><a href="#"> Girly <span>(4)</span> </a>
+								</li>
 							</ul>
 						</div>
 						<div class="sidebar-widget">
 							<h3 class="sidebar-title">Properties</h3>
 							<ul class="sidebar-menu">
-								<li><a href="#">Colorful Dress <span>(2)</span> </a></li>
-								<li><a href="#">Maxi Dress <span>(4)</span> </a></li>
-								<li><a href="#">Midi Dress <span>(4)</span> </a></li>
-								<li><a href="#">Short Dress <span>(3)</span> </a></li>
-								<li><a href="#">Short Sleeve <span>(2)</span> </a></li>
+								<li><a href="#">Colorful Dress <span>(2)</span> </a>
+								</li>
+								<li><a href="#">Maxi Dress <span>(4)</span> </a>
+								</li>
+								<li><a href="#">Midi Dress <span>(4)</span> </a>
+								</li>
+								<li><a href="#">Short Dress <span>(3)</span> </a>
+								</li>
+								<li><a href="#">Short Sleeve <span>(2)</span> </a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -146,10 +176,12 @@
 								<ul class="shop-tab f-left" role="tablist">
 									<li role="presentation" class="active"><a href="#home"
 										data-toggle="tab"><i class="fa fa-th-large"
-											aria-hidden="true"></i> </a></li>
+											aria-hidden="true"></i> </a>
+									</li>
 									<li role="presentation"><a href="#profile"
 										data-toggle="tab"><i class="fa fa-th-list"
-											aria-hidden="true"></i> </a></li>
+											aria-hidden="true"></i> </a>
+									</li>
 								</ul>
 								<div class="selector-field f-left ml-20 hidden-xs">
 									<form action="#">
@@ -182,7 +214,7 @@
 							</div>
 							<div class="tab-content">
 								<div role="tabpanel" class="tab-pane active" id="home">
-									<%@ include file="ShowProductList.jsp" %>
+									<%@ include file="ShowProductList.jsp"%>
 								</div>
 							</div>
 						</div>

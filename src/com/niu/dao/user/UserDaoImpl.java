@@ -7,29 +7,15 @@ import java.util.List;
 import com.mysql.jdbc.Connection;
 import com.niu.bean.User;
 import com.niu.dao.BaseDaoImpl;
+import com.niu.util.ResultSetUtil;
 
 public class UserDaoImpl extends BaseDaoImpl<User> implements UserDao {
 
 	private User user;
+
 	public UserDaoImpl(Connection conn) {
 		super(conn);
 		// TODO Auto-generated constructor stub
-	}
-
-	public User setTableByRs(ResultSet rs) throws SQLException {
-		if (rs != null) {
-			user = new User();
-			user.setId(rs.getInt("id"));
-			user.setLoginName(rs.getString("loginName"));
-			user.setUserName(rs.getString("userName"));
-			user.setPassword(rs.getString("password"));
-			user.setSex(rs.getInt("sex"));
-			user.setIdentityCode(rs.getString("identityCode"));
-			user.setEmail(rs.getString("email"));
-			user.setMobile(rs.getString("mobile"));
-			user.setType(rs.getInt("type"));
-		}
-		return user;
 	}
 
 	@Override
@@ -38,28 +24,39 @@ public class UserDaoImpl extends BaseDaoImpl<User> implements UserDao {
 				"SELECT id,loginName,userName,PASSWORD,sex,identityCode,email,mobile,TYPE "
 						+ "FROM easybuy_user " + "WHERE 1=1 AND loginName=?");
 		ResultSet rs = this.executeQuery(sql, loginName);
-		while (rs.next()) {
-			user = setTableByRs(rs);
-		}
-		return user;
+		return ResultSetUtil.getClassByRs(rs, User.class);
+
 	}
 
 	@Override
 	public List<User> getAllUser() {
-		// TODO Auto-generated method stub
-		return null;
+		StringBuffer sql = new StringBuffer();
+		sql.append("SELECT id,loginName,userName,PASSWORD,sex,identityCode,email,mobile,TYPE ");
+		sql.append("FROM easybuy_user;");
+		ResultSet rs = this.executeQuery(sql);
+		return ResultSetUtil.getListByRs(rs, User.class);
 	}
 
 	@Override
 	public int addUser(User user) throws SQLException {
+		int id = -1;
 		StringBuffer sql = new StringBuffer(
 				"INSERT INTO easybuy_user(loginName,userName,`password`,sex,identityCode,email,mobile,`type`)"
 						+ "VALUE(?,?,?,?,?,?,?,?);");
-		ps = this.update(sql, user.getLoginName(), user.getUserName(),
+		id = this.update(sql, user.getLoginName(), user.getUserName(),
 				user.getPassword(), user.getSex(), user.getIdentityCode(),
 				user.getEmail(), user.getMobile(), user.getType());
-		int id = ps.executeUpdate();
+
 		return id;
+	}
+
+	@Override
+	public List<User> deleteUser(String id) {
+		StringBuffer sql = new StringBuffer(
+				"DELETE FROM easybuy_user WHERE id=?");
+		this.update(sql, id);
+		List<User> allUser = getAllUser();
+		return allUser;
 	}
 
 }

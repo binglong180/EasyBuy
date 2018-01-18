@@ -1,6 +1,9 @@
 ﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page import="com.niu.bean.*"%>
+<%@ page import="com.niu.util.*"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<%@ include file="../common/pre/header.jsp"%>
+
 <html class="no-js" lang="en">
 <head>
 <meta charset="utf-8">
@@ -10,6 +13,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+	<div id="MyLink">
+		<%@include file="../../common/pre/Link.jsp"%>
+	</div>
+	<div id="MyHeader">
+		<%@include file="../../common/pre/header.jsp"%>
+	</div>
 	<%
 		//从请求中获取所有的cookie
 		Cookie[] css = request.getCookies();
@@ -32,7 +41,7 @@
 	<!-- account area start -->
 	<div class="account-area pt-30 log">
 		<div class="container">
-			<div class="row">
+			<div class="row" id="MyLogin">
 				<div class="col-md-6 col-lg-6 col-sm-6 col-md-offset-3"
 					style="margin-bottom:100px;margin-top:100px">
 					<div class="account-info pb-30">
@@ -59,7 +68,7 @@
 								<label> <a href="#" class="lost_password">忘记密码</a> <input
 									type="checkbox"
 									style="width:18px;height:18px;margin-left:200px"> 记住密码
-								</label><input value="登录" type="button" id="loginSubmit">
+								</label><input value="登录" type="button" id="loginSubmit2">
 							</div>
 						</form>
 					</div>
@@ -71,7 +80,6 @@
 
 </body>
 <%@include file="../common/pre/footer.jsp"%>
-
 <script type="text/javascript">
 	
 </script>

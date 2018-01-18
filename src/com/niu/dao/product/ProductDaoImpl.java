@@ -100,7 +100,6 @@ public class ProductDaoImpl extends BaseDaoImpl<Product> implements ProductDao {
 		return count;
 	}
 
-	@Override
 	public Product setTableByRs(ResultSet rs) throws SQLException {
 		Product product = new Product();
 		product.setId(rs.getInt("id"));
@@ -127,5 +126,14 @@ public class ProductDaoImpl extends BaseDaoImpl<Product> implements ProductDao {
 			product = setTableByRs(executeQuery);
 		}
 		return product;
+	}
+
+	@Override
+	public Integer updateStockByid(String id, Integer stock)
+			throws SQLException {
+		StringBuffer sql = new StringBuffer();
+		sql.append("UPDATE easybuy_product SET stock=? WHERE id=?");
+		Integer update = this.update(sql, stock, id);
+		return update;
 	}
 }

@@ -8,11 +8,11 @@ public class Order {
 	private String loginName;// 登录名
 	private String userAddress;// 用户地址
 	private Date createTime;// 创建时间
-	private double costfloat;// 总消费
+	private double cost;// 总消费
 	private String serialNumber;// 订单号
 
 	public Order(Integer id, Integer userId, String loginName,
-			String userAddress, Date createTime, double costfloat,
+			String userAddress, Date createTime, double cost,
 			String serialNumber) {
 		super();
 		this.id = id;
@@ -20,7 +20,7 @@ public class Order {
 		this.loginName = loginName;
 		this.userAddress = userAddress;
 		this.createTime = createTime;
-		this.costfloat = costfloat;
+		this.cost = cost;
 		this.serialNumber = serialNumber;
 	}
 
@@ -68,12 +68,12 @@ public class Order {
 		this.createTime = createTime;
 	}
 
-	public double getCostfloat() {
-		return costfloat;
+	public double getCost() {
+		return cost;
 	}
 
-	public void setCostfloat(double costfloat) {
-		this.costfloat = costfloat;
+	public void setCost(double cost) {
+		this.cost = cost;
 	}
 
 	public String getSerialNumber() {
@@ -88,8 +88,8 @@ public class Order {
 	public String toString() {
 		return "Order [id=" + id + ", userId=" + userId + ", loginName="
 				+ loginName + ", userAddress=" + userAddress + ", createTime="
-				+ createTime + ", costfloat=" + costfloat + ", serialNumber="
+				+ createTime + ", cost=" + cost + ", serialNumber="
 				+ serialNumber + "]";
 	}
-	
+
 }

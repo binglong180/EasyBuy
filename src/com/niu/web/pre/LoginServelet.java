@@ -16,6 +16,7 @@ import com.niu.service.user.UserServiceImpl;
 import com.niu.util.EmptyUtil;
 import com.niu.util.MD5Util;
 import com.niu.util.ReturnResult;
+import com.niu.util.ShoppingCart;
 import com.niu.web.AbstractServlet;
 
 @WebServlet(value = { "/Login" }, loadOnStartup = 1)
@@ -74,6 +75,7 @@ public class LoginServelet extends AbstractServlet {
 				}
 				resp.addCookie(cookie1);
 				resp.addCookie(cookie2);
+				ShoppingCart.setRedisByCookie(req, resp);
 				result.returnSuccess("登录成功！");
 			} else {
 				result.returnFail("密码或用户名错误");
@@ -86,9 +88,49 @@ public class LoginServelet extends AbstractServlet {
 
 	public String loginOut(HttpServletRequest req, HttpServletResponse resp)
 			throws Exception {
-		req.getSession().removeAttribute("user");
+		System.out.println("退出前"
+				+ ShoppingCart.getCart(req, resp).getProductItems().toString());
+		req.getSession().invalidate();
+		ShoppingCart.clearItems();
+		ShoppingCart.clearCartCookie(resp);
 		result.returnSuccess("注销成功！");
 		return "pre/index";
+	}
+
+	/**
+	 * 
+	 * 判断用户是否登录！
+	 * 
+	 * @author 牛牛
+	 * 
+	 * @date 2018-1-10
+	 * 
+	 * @param req
+	 * @param resp
+	 * @return
+	 * @throws Exception
+	 */
+	public ReturnResult isLogin(HttpServletRequest req, HttpServletResponse resp)
+			throws Exception {
+		ReturnResult result = new ReturnResult();
+		HttpSession session = req.getSession();
+		User user = (User) session.getAttribute("user");
+		if (EmptyUtil.isEmpty(user)) {
+			result.returnFail("未登录");
+		} else {
+			result.returnSuccess();
+		}
+		return result;// 已经登录
+	}
+
+	public String refreshLogin(HttpServletRequest req, HttpServletResponse resp)
+			throws Exception {
+		HttpSession session = req.getSession();
+		User user = (User) session.getAttribute("user");
+		if (!EmptyUtil.isEmpty(user)) {
+			session.setAttribute("user", user);
+		}
+		return "/common/pre/header";
 	}
 
 	@Override

@@ -31,35 +31,36 @@
 						</div>
 						<div class="product_vmegamenu">
 							<ul>
-								
-									<c:forEach var="productCategory"
-										items="${productCategoryViewList}" varStatus="imgIndex">
-										<!--一级分类  -->
-										<li><a
-											href="${url}/Product?action=ProductList&categoryId=${productCategory.productCategory.id}"
-											class="hover-icon"><img
-												src="${url}/statics/img/menu-l/${imgIndex.index+1}.png"
-												alt="" />${productCategory.productCategory.name}</a> <!-- 二级菜单 -->
-											<c:if test="${!empty productCategory.pcvList}">
-												<div class="vmegamenu">
-													<c:forEach var="productCategory2"
-														items="${productCategory.pcvList}">
-														<!-- 三级菜单 -->
-														<c:if test="${!empty productCategory2.pcvList}">
-															<span> <a
-																href="${url}/Product?action=ProductList&categoryId=${productCategory2.productCategory.id}"
-																class="vgema-title">${productCategory2.productCategory.name}</a>
-																<c:forEach var="productCategory3"
-																	items="${productCategory2.pcvList}">
-																	<a
-																		href="${url}/Product?action=ProductList&categoryId=${productCategory3.productCategory.id}">${productCategory3.productCategory.name}</a>
-																</c:forEach> </span>
-														</c:if>
-													</c:forEach>
-												</div>
-											</c:if></li>
-									</c:forEach>
-								</ul>
+
+								<c:forEach var="productCategory"
+									items="${productCategoryViewList}" varStatus="imgIndex">
+									<!--一级分类  -->
+									<li><a
+										href="${url}/Product?action=ProductList&categoryId=${productCategory.productCategory.id}"
+										class="hover-icon"><img
+											src="${url}/statics/img/menu-l/${imgIndex.index+1}.png"
+											alt="" />${productCategory.productCategory.name}</a> <!-- 二级菜单 -->
+										<c:if test="${!empty productCategory.pcvList}">
+											<div class="vmegamenu">
+												<c:forEach var="productCategory2"
+													items="${productCategory.pcvList}">
+													<!-- 三级菜单 -->
+													<c:if test="${!empty productCategory2.pcvList}">
+														<span> <a
+															href="${url}/Product?action=ProductList&categoryId=${productCategory2.productCategory.id}"
+															class="vgema-title">${productCategory2.productCategory.name}</a>
+															<c:forEach var="productCategory3"
+																items="${productCategory2.pcvList}">
+																<a
+																	href="${url}/Product?action=ProductList&categoryId=${productCategory3.productCategory.id}">${productCategory3.productCategory.name}</a>
+															</c:forEach> </span>
+													</c:if>
+												</c:forEach>
+											</div>
+										</c:if>
+									</li>
+								</c:forEach>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -67,17 +68,17 @@
 					<div class="mainmenu">
 						<nav>
 						<ul>
-							<li><a href="${url}/Home/action=index">首页</a>
+							<li><a href="${url}/Home?action=index" target="_blank">首页</a>
 							</li>
 							<c:if test="${!empty productCategoryViewList}">
 								<c:forEach var="productCategory"
 									items="${productCategoryViewList}">
-									<li><a href="${url}/Product?action=ProductList&categoryId=${productCategory.productCategory.id}">${productCategory.productCategory.name}</a>
+									<li><a
+										href="${url}/Product?action=ProductList&categoryId=${productCategory.productCategory.id}">${productCategory.productCategory.name}</a>
 									</li>
 								</c:forEach>
 							</c:if>
-							<li><a href="${url}/pre/contact-us.jsp">联系我们</a>
-							</li>
+							<li><a href="${url}/pre/contact-us.jsp">联系我们</a></li>
 						</ul>
 						</nav>
 					</div>
@@ -96,10 +97,12 @@
 							<li></li>
 							<c:if test="${!empty productCategoryList}">
 								<c:forEach var="productCategory" items="${productCategoryList}">
-									<li><a href="index.jsp">${productCategory.name}</a></li>
+									<li><a href="index.jsp">${productCategory.name}</a>
+									</li>
 								</c:forEach>
 							</c:if>
-							<li><a href="${loginUrl }">${userName}</a></li>
+							<li><a href="${loginUrl }">${userName}</a>
+							</li>
 						</ul>
 						</nav>
 					</div>
@@ -109,5 +112,16 @@
 	</div>
 	<!-- mobile-menu-end -->
 	<!-- mainmenu-area-end -->
+	<!--弹出登录窗口*****************************************-->
+	<div id="fade3" class="black_overlay"></div>
+	<div id="MyDiv3" class="white_content"
+		style="width:500px;background:rgba(260, 260,260, 0.4)">
+		<div style="width:480px;color:white">
+			<img onclick="CloseDiv_1('MyDiv3','fade3')" src="${url}/statics/img/close.gif"
+				style="padding:20px;cursor:pointer;"/>
+			<%@include file="../../pre/toLogin.jsp"%>
+		</div>
+	</div>
+	<!--弹出登录窗口*****************************************-->
 </body>
 </html>

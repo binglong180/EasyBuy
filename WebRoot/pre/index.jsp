@@ -1,6 +1,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="Utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page import="com.niu.bean.*"%>
+<%@ page import="com.niu.util.*"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
@@ -20,10 +21,20 @@
 </head>
 
 <body>
-	<%@include file="../common/pre/header.jsp"%>
-	<%@include file="../common/pre/search.jsp"%>
-	<%@include file="../common/pre/menuDown.jsp"%>
-
+	<div id="MyLink">
+		<%@include file="../../common/pre/Link.jsp"%>
+	</div>
+	<div id="MyHeader">
+		<%@include file="../../common/pre/header.jsp"%>
+	</div>
+	<div id="MySearch">
+		<%@include file="../../common/pre/search.jsp"%>
+	</div>
+	<div id="MyMenu">
+		<%@include file="../../common/pre/menuDown.jsp"%>
+	</div>
+	
+	
 
 
 
@@ -2249,7 +2260,10 @@
 	<!-- all-product-area-end -->
 
 
-	<%@include file="../common/pre/footer.jsp"%>
+	<div id="MyFooter">
+		<%@include file="../../common/pre/footer.jsp"%>
+	</div>
+
 </body>
 
 </html>
