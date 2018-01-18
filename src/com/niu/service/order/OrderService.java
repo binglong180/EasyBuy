@@ -11,4 +11,8 @@ public interface OrderService extends BaseService<Order> {
 	Order saveOrder(User user, String addressId, ShoppingCart cart);
 
 	List<Order> queryOrderById(String userId);
+
+	Order queryOrder(String id);
+
+	List<Order> queryAllOrder();
 }

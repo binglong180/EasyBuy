@@ -116,4 +116,33 @@ public class OrderServiceImpl extends BaseServiceImpl<Order> implements
 		}
 		return queryOrderById;
 	}
+
+	@Override
+	public Order queryOrder(String id) {
+		Order queryOrder = null;
+		try {
+			conn = JDBCUtil.getConnection();
+			od = new OrderDaoImpl(conn);
+			queryOrder = od.queryOrder(id);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return queryOrder;
+	}
+
+	@Override
+	public List<Order> queryAllOrder() {
+		List<Order> queryAllOrder = null;
+		try {
+			conn = JDBCUtil.getConnection();
+			od = new OrderDaoImpl(conn);
+			queryAllOrder = od.queryAllOrder();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return queryAllOrder;
+	}
+
 }

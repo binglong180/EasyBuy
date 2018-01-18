@@ -35,13 +35,12 @@ public class OrderDetailDaoImpl extends BaseDaoImpl<OrderDetail> implements
 	}
 
 	@Override
-	public OrderDetail getOrderDetail(String orderId) throws SQLException {
+	public List<OrderDetail> getOrderDetail(String orderId) throws SQLException {
 		StringBuffer sql = new StringBuffer();
 		sql.append("SELECT * FROM easybuy_order_detail WHERE orderId=?");
 		ResultSet executeQuery = this.executeQuery(sql, orderId);
-		OrderDetail classByRs = ResultSetUtil.getClassByRs(executeQuery,
-				OrderDetail.class);
-		return classByRs;
+		return ResultSetUtil.getListByRs(executeQuery, OrderDetail.class);
+
 	}
 
 }

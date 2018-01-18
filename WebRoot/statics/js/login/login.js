@@ -43,7 +43,7 @@ $("#loginSubmit2").click(function() {
 		showLogin();// 弹窗
 	}
 });
-// 登录方法
+// 登录方法/弹出的登录
 function login() {
 	var loginName = $("#loginName").val();
 	var password = hex_md5($("#password").val());// 进行MD5加密处理
@@ -140,6 +140,7 @@ function mpanel7() {
 
 			});
 }
+//页面登录
 function login2() {
 	var loginName = $("#loginName").val();
 	var password = hex_md5($("#password").val());// 进行MD5加密处理

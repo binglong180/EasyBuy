@@ -1,6 +1,7 @@
 package com.niu.service.order;
 
 import java.sql.SQLException;
+import java.util.List;
 
 import com.niu.bean.OrderDetail;
 import com.niu.service.BaseService;
@@ -20,5 +21,7 @@ public interface OrderDetailService extends BaseService<OrderDetail> {
 	 */
 	Integer addOrderDetail(OrderDetail orderDetail);
 
-	OrderDetail getOrderDetail(String orderId);
+	List<OrderDetail> getOrderDetail(String orderId);
+
+	List<Object> getDetailList(String orderId);
 }

@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 import com.niu.bean.User;
 import com.niu.service.user.UserService;
 import com.niu.service.user.UserServiceImpl;
+import com.niu.util.EmptyUtil;
+import com.niu.util.ShoppingCart;
 import com.niu.web.AbstractServlet;
 
 @WebServlet(value = "/BackendUser")
@@ -19,11 +21,17 @@ public class BackendUserServlet extends AbstractServlet {
 
 	public String userInfo(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
+		if (EmptyUtil.isEmpty(ShoppingCart.getLoginUser(request))) {
+			return "/pre/login";
+		}
 		return "/backend/user";
 	}
 
 	public String getUserlist(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
+		if (EmptyUtil.isEmpty(ShoppingCart.getLoginUser(request))) {
+			return "/pre/login";
+		}
 		List<User> allUser = us.getAllUser();
 		request.setAttribute("userList", allUser);
 		return "/backend/user/userList";
@@ -31,6 +39,9 @@ public class BackendUserServlet extends AbstractServlet {
 
 	public String deleteUser(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
+		if (EmptyUtil.isEmpty(ShoppingCart.getLoginUser(request))) {
+			return "/pre/login";
+		}
 		String userId = request.getParameter("userId");
 		List<User> allUser = us.deleteUser(userId);
 		request.setAttribute("userList", allUser);
@@ -43,7 +54,6 @@ public class BackendUserServlet extends AbstractServlet {
 
 	@Override
 	public Class getServletClass() {
-		// TODO Auto-generated method stub
 		return BackendUserServlet.class;
 	}
 

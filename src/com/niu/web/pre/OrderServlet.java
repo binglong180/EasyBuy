@@ -8,7 +8,6 @@ import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import com.alibaba.fastjson.JSON;
 import com.niu.bean.Order;
@@ -46,8 +45,10 @@ public class OrderServlet extends AbstractServlet {
 	 */
 	public String toSettle(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		HttpSession session = request.getSession();
-		User user = (User) session.getAttribute("user");
+		User user = ShoppingCart.getLoginUser(request);
+		if (EmptyUtil.isEmpty(user)) {
+			return "/pre/login";
+		}
 		ShoppingCart cart = ShoppingCart.getCart(request, response);
 		Integer userId = user.getId();
 		List<UserAddress> addressList = uas.queryAddressByUserId(userId
@@ -71,10 +72,13 @@ public class OrderServlet extends AbstractServlet {
 	 * @throws ServletException
 	 * @throws IOException
 	 */
-	public ReturnResult addAddress(HttpServletRequest request,
+	public Object addAddress(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		ReturnResult result = new ReturnResult();
 		User user = ShoppingCart.getLoginUser(request);
+		if (EmptyUtil.isEmpty(user)) {
+			return "/pre/login";
+		}
 		UserAddress userAddress = new UserAddress();
 		Integer userId = user.getId();
 		userAddress.setCreateTime(new Date());
@@ -114,6 +118,9 @@ public class OrderServlet extends AbstractServlet {
 	 */
 	public Object addOrder(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
+		if (EmptyUtil.isEmpty(ShoppingCart.getLoginUser(request))) {
+			return "/pre/login";
+		}
 		ReturnResult result = new ReturnResult();
 		os = new OrderServiceImpl();
 		String addressId = request.getParameter("addressId");

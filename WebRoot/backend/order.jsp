@@ -14,7 +14,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>订单管理</title>
-
+<script type="text/javascript" src="${url}/backend/js/order/myorder.js"></script>
 <!--[if IE 9]>
     <link rel="stylesheet" media="screen" href="${url}/backend/css/style.ie9.css"/>
 <![endif]-->
@@ -47,7 +47,7 @@
 						<li><a href="${url}/BackendOrderServlet?action=getOrder" class="wode">我的定单</a>
 						</li>
 						<c:if test="${sessionScope.user.type==1}">
-							<li><a href="javascript:getUserList()" class="widgets">定单列表</a>
+							<li><a href="javascript:getAllOrder()" class="widgets">定单列表</a>
 							</li>
 						</c:if>						
 					</ul>

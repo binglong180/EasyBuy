@@ -8,6 +8,8 @@
 		var contextPath = "${url}";
 	</script>
 </c:if>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <link rel="stylesheet" href="${url}/backend/css/style.default.css"
 	type="text/css" />
 <script type="text/javascript"
@@ -25,7 +27,7 @@
 <script type="text/javascript" src="${url}/backend/js/custom/general.js"></script>
 <script type="text/javascript" src="${url}/backend/js/custom/tables.js"></script>
 <script type="text/javascript" src="${url}/backend/js/user/user.js"></script>
-<script type="text/javascript" src="${url}/backend/js/order/order.js"></script>
+<script type="text/javascript" src="${url}/backend/js/order/myorder.js"></script>
 <div id="contentwrapper" class="contentwrapper">
 	<div class="contenttitle2">
 		<h3>我的订单</h3>
@@ -65,11 +67,11 @@
 					<td align="center"><span class="center"> <input
 							type="checkbox" value="${item.id}" /> </span>
 					</td>
-					<td class="center"><a href="javascript:getOrderDetail(${item.id})">${item.serialNumber}</a></td>
-					<td class="center">${item.createTime}</td>
-					<td class="center">${item.cost}</td>
+					<td class="center"><a href="javascript:getOrderDetail(${item.id})" id="serialNumber">${item.serialNumber}</a></td>
+					<td class="center" >${item.createTime}</td>
+					<td class="center" >${item.cost}</td>
 
-					<td class="center">${item.userAddress}</td>
+					<td class="center" >${item.userAddress}</td>
 					<td class="center"><a href="javascript:getOrderDetail(${item.id})" class="edit">查看详情</a> &nbsp; <a
 						href="" class="delete">删除</a></td>
 				</tr>

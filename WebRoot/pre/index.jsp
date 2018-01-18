@@ -33,7 +33,17 @@
 	<div id="MyMenu">
 		<%@include file="../../common/pre/menuDown.jsp"%>
 	</div>
-	
+	<!--弹出登录窗口*****************************************-->
+	<div id="fade3" class="black_overlay" style="z-index: 900"></div>
+	<div id="MyDiv3" class="white_content"
+		style="width:500px;background:rgba(260, 260,260, 0.4)">
+		<div style="width:480px;color:white">
+			<img onclick="CloseDiv_1('MyDiv3','fade3')" src="${url}/statics/img/close.gif"
+				style="padding:20px;cursor:pointer;"/>
+			<%@include file="../../pre/toLogin.jsp"%>
+		</div>
+	</div>
+	<!--弹出登录窗口*****************************************-->
 	
 
 

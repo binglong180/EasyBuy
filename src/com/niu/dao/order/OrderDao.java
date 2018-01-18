@@ -23,4 +23,7 @@ public interface OrderDao extends BaseDao<Order> {
 
 	List<Order> queryOrderById(String userId) throws SQLException;
 
+	Order queryOrder(String id) throws SQLException;
+
+	List<Order> queryAllOrder() throws SQLException;
 }

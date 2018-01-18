@@ -1,6 +1,7 @@
 package com.niu.dao.order;
 
 import java.sql.SQLException;
+import java.util.List;
 
 import com.niu.bean.OrderDetail;
 import com.niu.dao.BaseDao;
@@ -32,6 +33,6 @@ public interface OrderDetailDao extends BaseDao<OrderDetail> {
 	 * @return
 	 * @throws SQLException
 	 */
-	OrderDetail getOrderDetail(String orderId) throws SQLException;
+	List<OrderDetail> getOrderDetail(String orderId) throws SQLException;
 
 }

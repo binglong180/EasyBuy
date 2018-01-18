@@ -9,12 +9,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.niu.bean.Order;
-import com.niu.bean.OrderDetail;
 import com.niu.bean.User;
 import com.niu.service.order.OrderDetailService;
 import com.niu.service.order.OrderDetailServiceImpl;
 import com.niu.service.order.OrderService;
 import com.niu.service.order.OrderServiceImpl;
+import com.niu.util.EmptyUtil;
 import com.niu.util.ShoppingCart;
 import com.niu.web.AbstractServlet;
 
@@ -31,6 +31,9 @@ public class BackendOrderServlet extends AbstractServlet {
 
 	public String getOrder(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
+		if (EmptyUtil.isEmpty(ShoppingCart.getLoginUser(request))) {
+			return "/pre/login";
+		}
 		User user = ShoppingCart.getLoginUser(request);
 		String userId = user.getId().toString();
 		List<Order> orderList = os.queryOrderById(userId);
@@ -40,9 +43,14 @@ public class BackendOrderServlet extends AbstractServlet {
 
 	public String getOrderDetail(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
+		if (EmptyUtil.isEmpty(ShoppingCart.getLoginUser(request))) {
+			return "/pre/login";
+		}
 		String orderId = request.getParameter("orderId");
-		OrderDetail orderDetail = ods.getOrderDetail(orderId);
-		request.setAttribute("orderDetail", orderDetail);
+		Order order = os.queryOrder(orderId);
+		request.setAttribute("order", order);
+		List<Object> orderDetailList = ods.getDetailList(orderId);
+		request.setAttribute("orderDetailList", orderDetailList);
 		return "/backend/order/orderDetail";
 	}
 
@@ -51,4 +59,14 @@ public class BackendOrderServlet extends AbstractServlet {
 		ods = new OrderDetailServiceImpl();
 	}
 
+	public String getAllOrder(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		if (EmptyUtil.isEmpty(ShoppingCart.getLoginUser(request))) {
+			return "/pre/login";
+		}
+		List<Order> AllOrder = os.queryAllOrder();
+		request.setAttribute("AllOrder", AllOrder);
+		return "/backend/order/AllOrder";
+
+	}
 }

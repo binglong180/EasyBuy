@@ -217,8 +217,8 @@ public class RegisterServlet extends AbstractServlet {
 		if (EmptyUtil.isEmpty(mobileVerificationCode)) {
 			return result.returnFail("请输入验证码！");
 		} else {
-			// if (mobileVerificationCode.equals(bgmobileVerificationCode)) {
-			if (mobileVerificationCode.equals("123456")) {
+			if (mobileVerificationCode.equals(bgmobileVerificationCode)) {
+				// if (mobileVerificationCode.equals("123456")) {
 				this.getServletContext().removeAttribute(
 						"bgmobileVerificationCode");
 				result.returnSuccess();

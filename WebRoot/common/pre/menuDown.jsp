@@ -26,6 +26,7 @@
 		</script>
 	</c:if>
 	<!-- header -->
+	
 	<!-- 三级菜单展示 -->
 	<div class="mainmenu-area bg-color-2 hidden-xs hidden-sm">
 		<div class="container">
@@ -40,7 +41,7 @@
 						
 						<div class="product_vmegamenu">
 						<!-- 三级菜单 -->
-							<ul>
+							<ul style="z-index: 400">
 								<c:forEach var="productCategory"
 									items="${productCategoryViewList}" varStatus="imgIndex">
 									<li><a

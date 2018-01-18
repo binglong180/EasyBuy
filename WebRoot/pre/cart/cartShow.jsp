@@ -23,7 +23,7 @@
 		<div class="row">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<form action="#">
-					<input type="hidden" id="isCart" value="${requestScope.cart.productItems.size()}"/>
+					
 					<div class="table-content table-responsive">
 						<table>
 							<thead>

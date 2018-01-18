@@ -85,7 +85,12 @@
 												0
 											</c:if> <c:if test="${!empty productItems }">
 												${requestScope.cart.productItems.size()}
+												
 											</c:if>种</span> <span class="price">${requestScope.cart.sumPrice}</span> </a>
+											<form action="">
+											<input type="hidden" id="isCart" value="${requestScope.cart.productItems.size()}"/>
+											
+											</form>
 									</div>
 									<div class="top-cart-content">
 										<ol class="mini-products-list">
@@ -119,7 +124,7 @@
 										</div>
 										<div class="cart-actions">
 											<button>
-												<a href="javascript:toCheckOut()"><span>结算</span> </a>
+												<a href="javascript:toSettle()"><span>结算</span> </a>
 											</button>
 										</div>
 									</div>

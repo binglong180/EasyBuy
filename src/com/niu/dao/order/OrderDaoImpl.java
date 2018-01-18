@@ -47,4 +47,20 @@ public class OrderDaoImpl extends BaseDaoImpl<Order> implements OrderDao {
 				Order.class);
 		return listByRs;
 	}
+
+	@Override
+	public Order queryOrder(String id) throws SQLException {
+		StringBuffer sql = new StringBuffer();
+		sql.append("SELECT * FROM easybuy_order o WHERE id=?");
+		ResultSet executeQuery = this.executeQuery(sql, id);
+		return ResultSetUtil.getClassByRs(executeQuery, Order.class);
+	}
+
+	@Override
+	public List<Order> queryAllOrder() throws SQLException {
+		StringBuffer sql = new StringBuffer();
+		sql.append("SELECT * FROM easybuy_order  ORDER BY createTime DESC");
+		ResultSet executeQuery = this.executeQuery(sql);
+		return ResultSetUtil.getListByRs(executeQuery, Order.class);
+	}
 }

@@ -27,54 +27,55 @@
 <script type="text/javascript" src="${url}/backend/js/custom/general.js"></script>
 <script type="text/javascript" src="${url}/backend/js/custom/tables.js"></script>
 <script type="text/javascript" src="${url}/backend/js/user/user.js"></script>
-<script type="text/javascript" src="${url}/backend/js/order/order.js"></script>
+<script type="text/javascript" src="${url}/backend/js/order/myorder.js"></script>
 <div id="contentwrapper" class="contentwrapper">
 	<div class="contenttitle2">
-		<h3>订单详情</h3>
+		<h3>订单列表</h3>
 	</div>
 	<!--contenttitle-->
-	<table cellpadding="0" cellspacing="0" border="0" class="stdtable stdtablecb">
+	<div class="tableoptions">
+		<button class="deletebutton radius3" title="dyntable2" id="deleteUser">删除</button>
+		&nbsp;&nbsp;
+		<button class="radius3">Apply Filter</button>
+	</div>
+	<table cellpadding="0" cellspacing="0" border="0"
+		class="stdtable stdtablecb" id="dyntable2">
 		<colgroup>
+			<col class="con0" style="width: 4%" />
 			<col class="con1" />
 			<col class="con0" />
+				<col class="con0" />
 			<col class="con1" />
 			<col class="con0" />
 
 		</colgroup>
-		
+		<thead>
+			<tr>
+				<th class="head0 nosort"><input type="checkbox"
+					class="checkall" />
+				</th>
+				<th class="head0">订单号</th>
+				<th class="head1">创建时间</th>
+				<th class="head0">用户</th>
+				<th class="head1">金额</th>
+				<th class="head0">地址</th>
+				<th class="head1">操作</th>
+			</tr>
+		</thead>
 		<tbody>
-			<tr class="gradeX">
-			</tr>
-			<tr class="gradeX">
-				<td class="center">订单号</td>
-				<td class="center">${requestScope.order.serialNumber}</td>
-				<td class="center">创建时间</td>
-
-				<td class="center">${requestScope.order.createTime}</td>
-
-			</tr>
-			<tr class="gradeX">
-				<td  class="center">地址</td>
-				<td class="center">${requestScope.order.userAddress}</td>
-				<td class="center">金额</td>
-				<td class="center">${requestScope.order.cost}</td>
-			</tr>
-			<tr class="gradeX">
-					<td class="center">商品</td>
-					<td class="center">商品名</td>
-					<td class="center">数量</td>
-					<td class="center">小计</td>
-				</tr>
-			<c:forEach var="item" items="${requestScope.orderDetailList}">
+			<c:forEach var="item" items="${requestScope.AllOrder}">
 				<tr class="gradeX">
-					<td class="center"><img src="${url}/files/${item.file}" alt="" style="height:100px"/>
-						
+					<td align="center"><span class="center"> <input
+							type="checkbox" value="${item.id}" /> </span>
 					</td>
-					<td class="center">${item.name}</td>
-					<td class="center">${item.quantity}</td>
+					<td class="center"><a href="javascript:getOrderDetail(${item.id})" id="serialNumber">${item.serialNumber}</a></td>
+					<td class="center" >${item.loginName}</td>
+					<td class="center" >${item.createTime}</td>
+					<td class="center" >${item.cost}</td>
 
-					<td class="center">${item.cost}</td>
-					
+					<td class="center" >${item.userAddress}</td>
+					<td class="center"><a href="javascript:getOrderDetail(${item.id})" class="edit">查看详情</a> &nbsp; <a
+						href="" class="delete">删除</a></td>
 				</tr>
 			</c:forEach>
 		</tbody>
